@@ -1,22 +1,21 @@
-var http = require('http');
+const express = require("express");
+const morgan = require("morgan");
+const chalk = require("chalk");
+const debug = require("debug")("app");
+const path = require("path");
 
-var options = {
-    host: 'www.manulife.com.vn',
-    path: '/'
-}
+const apiRouter = require('./src/api/routes/api.route');
 
-var request = http.request(options, function (res) {
-    var data = '';
-    res.on('data', function (chunk) {
-        data += chunk;
-    });
-    res.on('end', function () {
-        console.log(data);
-    });
+const app = express();
+
+app.use("/api", apiRouter);
+
+app.use(express.static(path.join(__dirname, "/src/web")));
+app.get("/*", function (req, res) {
+    res.sendFile(path.join(__dirname, "/src/web/index.html"));
 });
 
-request.on('error', function (e) {
-    console.log(e.message);
+app.use(morgan("tiny"));
+app.listen(process.env.PORT || 8080, function () {
+  debug("Listening on port " + chalk.green(process.env.PORT || 8080));
 });
-
-request.end();

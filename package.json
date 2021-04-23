@@ -4,12 +4,26 @@
   "description": "A simple TTS app",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
+    "e2e": "ng e2e",
+    "debug": "DEBUG=app node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "debug": "^4.3.1",
+    "path": "^0.12.7",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
   "devDependencies": {
     "@types/node": "^14.14.41",
     "eslint": "^7.24.0"
+  },
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.13.4"
   }
 }

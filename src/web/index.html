@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1>The XMLHttpRequest Object</h1>
+
+  <input type="text" name="url" id="input-url" />
+
+  <button type="button" onclick="loadDoc()">Fetch data</button>
+  <button type="button" onclick="retriveText()">Retrieve data</button>
+
+  <p id="demo"></p>
+
+  <script>
+    function loadDoc() {
+      var xhttp = new XMLHttpRequest();
+      var url = document.getElementById("input-url").value;
+      xhttp.open("GET", "/api/fetch-text/" + btoa(url), true);
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhttp.send();
+    }
+
+    function retriveText(){
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("demo").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "/api/retrive-data", true);
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhttp.send();
+    }
+  </script>
+
+</body>
+
+</html>
