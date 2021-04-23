@@ -5,8 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "e2e": "ng e2e",
-    "debug": "DEBUG=app node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
