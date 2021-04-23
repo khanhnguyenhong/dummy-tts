@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@types/node": "^14.14.41",
-    "enhanced-resolve": "^3.3.0",
+    "enhanced-resolve": "^3.4.1",
     "eslint": "^7.24.0"
   },
   "engines": {
