@@ -1,9 +1,10 @@
-const http = require("http");
+const http = require('follow-redirects').http;
 const fs = require("fs");
 const fileName = "tempDB/temp-db.txt";
 
 function fetchTextController() {
   function _fetchTextFromUrl(url) {
+    url = url.trim();
     console.log("fetching data from", url);
     return new Promise((resolve) => {
       let responseHtml = "";

@@ -1,0 +1,19 @@
+.container {
+    width: 400px;
+    margin: auto;
+}
+
+textarea,
+input {
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+button{
+    margin-bottom: 4px;
+}
+
+textarea {
+    height: 50px;
+    overflow: auto;
+}
