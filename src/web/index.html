@@ -8,8 +8,8 @@
 
 <body>
   <div class="container">
-    <a style="width: 100%;" href="\">
-      <button type="button" style="width: 100%;">
+    <a class="full-width" href="\">
+      <button type="button" class="full-width">
         Home
       </button>
     </a>
@@ -21,12 +21,17 @@
     <button type="button" onclick="fetchFirstItem()">Fetch next item</button>
 
     <div id='url-list-container'></div>
-    
+
     <input type="text" name="url" id="input-url" />
 
     <button type="button" onclick="fetchData()">Fetch data</button>
     <button type="button" onclick="retriveText()">Retrieve text</button>
     <button type="button" onclick="retrivePage()">Retrieve page</button>
+
+    <div class="full-width">
+      <input type="text" placeholder="contain including" id="input-including-text" />
+      <button type="button" onclick="refineUrlListFromPage()">Refine Url(s)</button>
+    </div>
 
     <div id="demo"></div>
   </div>
