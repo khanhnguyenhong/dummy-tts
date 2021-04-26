@@ -35,15 +35,15 @@ function _reFineHtml(htmlString) {
 }
 
 function fetchData() {
-  var xhttp = new XMLHttpRequest();
-  var url = document.getElementById("input-url").value;
+  let xhttp = new XMLHttpRequest();
+  let url = document.getElementById("input-url").value;
   xhttp.open("GET", "/api/fetch-text/" + btoa(url), true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhttp.send();
 }
 
 function retriveText() {
-  var xhttp = new XMLHttpRequest();
+  let xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("demo").innerHTML = _reFineHtml(
@@ -57,7 +57,7 @@ function retriveText() {
 }
 
 function retrivePage() {
-  var xhttp = new XMLHttpRequest();
+  let xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("demo").innerHTML = this.responseText;
@@ -77,20 +77,28 @@ function constructUrlList() {
 
 function refineUrlListFromPage() {
   const aTags = document.getElementsByTagName("a");
-  const includingText = document.getElementById("input-including-text");
+  const includingText = document.getElementById("input-including-text").value;
   urlList = [];
   urlNameList = [];
-  document.getElementById("url-list").value = "";
-  for (var i = 0; i < aTags.length; i++) {
+
+  let tempUrls = [],
+    tempNames = [];
+  for (let i = 0; i < aTags.length; i++) {
     let a = aTags[i];
     try {
-      if (a.href.indexOf(includingText) > 0) {
-        urlList.push(a.href);
-        urlNameList.push(a.innerHTML);
-        document.getElementById("url-list").value += a.href + "\n";
-      }
+      tempUrls.push(a.href);
+      tempNames.push(a.innerHTML);
     } catch (error) {
       console.log("error while refining a tag", error);
+    }
+  }
+
+  document.getElementById("url-list").value = "";
+  for (let i = 0; i < tempUrls.length; i++) {
+    if (tempNames[i].indexOf(includingText) >= 0) {
+      urlNameList.push(tempNames[i]);
+      urlList.push(tempUrls[i]);
+      document.getElementById("url-list").value += tempUrls[i] + "\n";
     }
   }
 }
