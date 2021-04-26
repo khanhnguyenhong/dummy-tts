@@ -81,13 +81,18 @@ function refineUrlListFromPage() {
   urlList = [];
   urlNameList = [];
   document.getElementById("url-list").value = "";
-  aTags.forEach((a) => {
-    if (a.href.indexOf(includingText) > 0) {
-      urlList.push(a.href);
-      urlNameList.push(a.innerHTML);
-      document.getElementById("url-list").value += a.href + "\n";
+  for (var i = 0; i < aTags.length; i++) {
+    let a = aTags[i];
+    try {
+      if (a.href.indexOf(includingText) > 0) {
+        urlList.push(a.href);
+        urlNameList.push(a.innerHTML);
+        document.getElementById("url-list").value += a.href + "\n";
+      }
+    } catch (error) {
+      console.log("error while refining a tag", error);
     }
-  });
+  }
 }
 
 function fetchFirstItem() {
