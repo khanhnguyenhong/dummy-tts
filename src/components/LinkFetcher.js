@@ -1,8 +1,13 @@
 import React from "react";
 
 class LinkFetcher extends React.Component {
-  urlList = [];
-  urlNameList = [];
+  constructor(props) {
+    super(props);
+    this.state = {
+      urlList: [],
+      urlNameList: [],
+    };
+  }
 
   fetchData() {
     let xhttp = new XMLHttpRequest();
@@ -72,17 +77,22 @@ class LinkFetcher extends React.Component {
   }
 
   constructUrlList() {
-    this.urlList = document.getElementById("url-list").value.split("\n");
+    this.setState({
+      urlList: document.getElementById("url-list").value.split("\n"),
+    });
+
     document.getElementById("url-list").value = "";
     const urlListContainer = document.getElementById("url-list-container");
-    urlListContainer.innerHTML = "Item(s): " + this.urlList.length;
+    urlListContainer.innerHTML = "Item(s): " + this.state.urlList.length;
   }
 
   refineUrlListFromPage() {
     const aTags = document.getElementsByTagName("a");
     const includingText = document.getElementById("input-including-text").value;
-    this.urlList = [];
-    this.urlNameList = [];
+    this.setState({
+      urlList: [],
+      urlNameList: [],
+    });
 
     let tempUrls = [],
       tempNames = [];
@@ -99,23 +109,23 @@ class LinkFetcher extends React.Component {
     document.getElementById("url-list").value = "";
     for (let i = 0; i < tempUrls.length; i++) {
       if (tempNames[i].indexOf(includingText) >= 0) {
-        this.urlNameList.push(tempNames[i]);
-        this.urlList.push(tempUrls[i]);
+        this.state.urlNameList.push(tempNames[i]);
+        this.state.urlList.push(tempUrls[i]);
         document.getElementById("url-list").value += tempUrls[i] + "\n";
       }
     }
   }
 
   fetchFirstItem() {
-    if (this.urlList.length) {
+    if (this.state.urlList.length) {
       document.getElementById("url-list-container").innerHTML = "No item";
       return;
     }
     const preUrl = document.getElementById("pre-url").value.trim();
-    document.getElementById("input-url").value = preUrl + this.urlList[0];
-    this.urlList.splice(0, 1);
+    document.getElementById("input-url").value = preUrl + this.state.urlList[0];
+    this.state.urlList.splice(0, 1);
     document.getElementById("url-list-container").innerHTML =
-      "Item(s): " + this.urlList.length;
+      "Item(s): " + this.state.urlList.length;
     this.fetchData();
   }
 
@@ -131,10 +141,10 @@ class LinkFetcher extends React.Component {
         <input type="text" placeholder="Pre-url" id="pre-url" />
         <textarea placeholder="Url list" id="url-list"></textarea>
 
-        <button type="button" onClick={this.constructUrlList}>
+        <button type="button" onClick={() => this.constructUrlList()}>
           constructUrlList
         </button>
-        <button type="button" onClick={this.fetchFirstItem}>
+        <button type="button" onClick={() => this.fetchFirstItem()}>
           Fetch next item
         </button>
 
@@ -150,10 +160,10 @@ class LinkFetcher extends React.Component {
         <button type="button" onClick={() => this.fetchData()}>
           Fetch data
         </button>
-        <button type="button" onClick={this.retriveText}>
+        <button type="button" onClick={() => this.retriveText()}>
           Retrieve text
         </button>
-        <button type="button" onClick={this.retrivePage}>
+        <button type="button" onClick={() => this.retrivePage()}>
           Retrieve page
         </button>
 
@@ -163,7 +173,7 @@ class LinkFetcher extends React.Component {
             placeholder="Including text"
             id="input-including-text"
           />
-          <button type="button" onClick={this.refineUrlListFromPage}>
+          <button type="button" onClick={() => this.refineUrlListFromPage()}>
             Refine Url(s)
           </button>
         </div>
