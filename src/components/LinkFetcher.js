@@ -10,11 +10,22 @@ class LinkFetcher extends React.Component {
   }
 
   fetchData() {
-    let xhttp = new XMLHttpRequest();
     let url = document.getElementById("input-url").value;
-    xhttp.open("GET", "/api/fetch-text/" + btoa(url), true);
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send();
+    // let xhttp = new XMLHttpRequest();
+    // xhttp.open("GET", "/api/fetch-text/" + btoa(url), true);
+    // xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    // xhttp.send();
+
+    fetch("/api/fetch-data", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        url,
+      }),
+    });
   }
 
   _splitByTag(_arr, _tag) {
@@ -52,9 +63,10 @@ class LinkFetcher extends React.Component {
 
   retriveText() {
     let xhttp = new XMLHttpRequest();
+    let that = this;
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("demo").innerHTML = this._reFineHtml(
+        document.getElementById("demo").innerHTML = that._reFineHtml(
           this.responseText
         );
       }
@@ -66,6 +78,7 @@ class LinkFetcher extends React.Component {
 
   retrivePage() {
     let xhttp = new XMLHttpRequest();
+    let that = this;
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         document.getElementById("demo").innerHTML = this.responseText;

@@ -1,4 +1,4 @@
-const http = require('follow-redirects').http;
+const http = require("follow-redirects").http;
 const fs = require("fs");
 const fileName = "tempDB/temp-db.txt";
 
@@ -39,7 +39,7 @@ function fetchTextController() {
       });
 
       request.on("error", function (e) {
-        console.error(error);
+        console.error(e);
       });
 
       request.end();
@@ -51,6 +51,15 @@ function fetchTextController() {
     const decodedUrl = Buffer.from(url, "base64").toString();
 
     _fetchTextFromUrl(decodedUrl);
+
+    res.send(true);
+  }
+
+  function fetchDataFromUrl(req, res) {
+    console.log('request', req);
+    const { url } = req.body;
+
+    _fetchTextFromUrl(url);
 
     res.send(true);
   }
@@ -69,6 +78,7 @@ function fetchTextController() {
   return {
     fetchText,
     retriveData,
+    fetchDataFromUrl,
   };
 }
 
