@@ -65,7 +65,7 @@ class LinkFetcher extends React.Component {
     let xhttp = new XMLHttpRequest();
     let that = this;
     xhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
+      if (this.readyState === 4 && this.status === 200) {
         document.getElementById("demo").innerHTML = that._reFineHtml(
           this.responseText
         );
@@ -78,9 +78,8 @@ class LinkFetcher extends React.Component {
 
   retrivePage() {
     let xhttp = new XMLHttpRequest();
-    let that = this;
     xhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
+      if (this.readyState === 4 && this.status === 200) {
         document.getElementById("demo").innerHTML = this.responseText;
       }
     };
@@ -95,8 +94,8 @@ class LinkFetcher extends React.Component {
     });
 
     document.getElementById("url-list").value = "";
-    const urlListContainer = document.getElementById("url-list-container");
-    urlListContainer.innerHTML = "Item(s): " + this.state.urlList.length;
+    document.getElementById("url-list-container").innerHTML =
+      "Item(s): " + this.state.urlList.length;
   }
 
   refineUrlListFromPage() {
@@ -130,7 +129,7 @@ class LinkFetcher extends React.Component {
   }
 
   fetchFirstItem() {
-    if (this.state.urlList.length) {
+    if (!this.state.urlList.length) {
       document.getElementById("url-list-container").innerHTML = "No item";
       return;
     }

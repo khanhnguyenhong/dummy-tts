@@ -56,7 +56,6 @@ function fetchTextController() {
   }
 
   function fetchDataFromUrl(req, res) {
-    console.log('request', req);
     const { url } = req.body;
 
     _fetchTextFromUrl(url);
