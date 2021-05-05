@@ -1,5 +1,13 @@
 import React from "react";
 
+function RemainingItems(props) {
+  if (props.count) {
+    return <p>Remaining Item(s): {props.count}</p>;
+  } else {
+    return <p>No item</p>;
+  }
+}
+
 class LinkFetcher extends React.Component {
   constructor(props) {
     super(props);
@@ -11,11 +19,6 @@ class LinkFetcher extends React.Component {
 
   fetchData() {
     let url = document.getElementById("input-url").value;
-    // let xhttp = new XMLHttpRequest();
-    // xhttp.open("GET", "/api/fetch-text/" + btoa(url), true);
-    // xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    // xhttp.send();
-
     fetch("/api/fetch-data", {
       method: "POST",
       headers: {
@@ -94,8 +97,6 @@ class LinkFetcher extends React.Component {
     });
 
     document.getElementById("url-list").value = "";
-    document.getElementById("url-list-container").innerHTML =
-      "Item(s): " + this.state.urlList.length;
   }
 
   refineUrlListFromPage() {
@@ -130,14 +131,15 @@ class LinkFetcher extends React.Component {
 
   fetchFirstItem() {
     if (!this.state.urlList.length) {
-      document.getElementById("url-list-container").innerHTML = "No item";
+      this.setState();
       return;
     }
     const preUrl = document.getElementById("pre-url").value.trim();
     document.getElementById("input-url").value = preUrl + this.state.urlList[0];
+
     this.state.urlList.splice(0, 1);
-    document.getElementById("url-list-container").innerHTML =
-      "Item(s): " + this.state.urlList.length;
+    this.setState({ urlList: this.state.urlList });
+
     this.fetchData();
   }
 
@@ -152,6 +154,8 @@ class LinkFetcher extends React.Component {
 
         <input type="text" placeholder="Pre-url" id="pre-url" />
         <textarea placeholder="Url list" id="url-list"></textarea>
+
+        <RemainingItems count={this.state.urlList.length} />
 
         <button type="button" onClick={() => this.constructUrlList()}>
           constructUrlList
