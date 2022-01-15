@@ -20,7 +20,7 @@
     "chalk": "^4.1.0",
     "debug": "^4.3.1",
     "express": "^4.17.1",
-    "follow-redirects": "^1.13.3",
+    "follow-redirects": "^1.14.7",
     "morgan": "^1.10.0",
     "path": "^0.12.7",
     "react": "^17.0.2",
