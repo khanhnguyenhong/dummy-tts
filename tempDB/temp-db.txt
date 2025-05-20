@@ -1,230 +1,476 @@
-<!DOCTYPE html>
-<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
-<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
-<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
-<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr"><!--<![endif]-->
+<h5><a class="more-chap btn " onclick="openNextChap('6416032')" href="javascript:void(0);">Chương 2&nbsp;:&nbsp;Đạo Bia</a></h5>
+        <div class="box-chap box-chap-6416032 hidden">Mặc Họa từ khi hiểu chuyện, thức hải bên trong liền xuất hiện mặt này Đạo Bia, đồng thời còn có một chút như có như không ký ức.
+Trong trí nhớ Mặc Họa ở một cái khác không có linh khí thế giới, vượt qua ngắn ngủi một đời.
 
-<head>
-  <meta charset="utf-8" />
-<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
-<link rel="canonical" href="/reader/yeu-nu-tron-cho-nao-convert/tmsy" />
-<link rel="shortlink" href="/reader/node/1865229" />
-<link rel="up" href="/reader/yeu-nu-tron-cho-nao-convert" />
-<link rel="prev" href="/reader/yeu-nu-tron-cho-nao-convert/tkrd" />
-<link rel="next" href="/reader/yeu-nu-tron-cho-nao-convert/lxry" />
-<link rel="shortcut icon" href="https://bachngocsach.com/reader/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
-<link rel="manifest" href="/reader/sites/default/files/pwa/manifest.json" />
-<meta name="theme-color" content="#ffffff" />
-  <title>Yêu Nữ Trốn Chỗ Nào [C] - Chương 40: Làm Khám Nghiệm Tử Thi Khác Một Cái Thân Phận</title>
+Một đời kia Mặc Họa gia đình phổ thông, nhưng học tập cố gắng, thành tích không sai, thi đậu đại học, chuyên nghiệp là mỹ thuật, thích nghiên cứu quốc hoạ cùng thư pháp.
+Sau khi tốt nghiệp tiến vào một nhà công ty lớn làm trang trí, tăng ca làm việc, hơn hai mươi tuổi liền quá cực khổ chết.
+Làm học sinh lúc học tập, sau khi tốt nghiệp làm việc, trong khẩn trương cùng lo nghĩ trôi qua cả một đời.
 
-      <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="viewport" content="width=device-width">
-	<meta name="theme-color" content="#176093">
-    <meta http-equiv="cleartype" content="on">
+Lấy lại tinh thần lúc, phát hiện bản thân sống được mơ mơ hồ hồ, chết được vội vàng không kịp chuẩn bị.
+Trước khi chết một lát, cả đời kinh lịch như đèn kéo quân ở trước mắt lướt qua.
+Cuộc đời của mình, chân chính có giá trị sự tình, một kiện chưa làm qua: không có hiếu thuận phụ mẫu, không có truy cầu lý tưởng, không có mộng tưởng, không có tình yêu, cũng chưa từng gặp qua đại thiên thế giới phong cảnh......
 
-  <link type="text/css" rel="stylesheet" href="https://bachngocsach.com/reader/sites/default/files/css/css_i4KIdcMvkQb4d_Ta4nOUZKAAM0osa3_O0cfIqUyVEZw.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://bachngocsach.com/reader/sites/default/files/css/css_tbtmwiI5O-pg4QI7Magm2a95mSfzXVVkZ5M_8OYKpaQ.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://bachngocsach.com/reader/sites/default/files/css/css_iD3rKQqelFXCUNwBTBtuk8K-n5c02cLN6GfDIZUPFTY.css" media="all" />
-  <script src="https://bachngocsach.com/reader/sites/default/files/js/js_mAdlLDOZdhd-dPsqzGWQGCuGzjoKTDN8gu4V9nctgpE.js"></script>
-<script src="https://bachngocsach.com/reader/sites/default/files/js/js_EjyQo4ChEUijUm6s4HS8MTEc08qbM7YRAroiCnPxTlE.js"></script>
-<script src="https://bachngocsach.com/reader/sites/default/files/js/js_kMg7W1sZANW-JVt-y1p4g6o0k68QXbUoYrBuKkRfQvo.js"></script>
-<script src="https://bachngocsach.com/reader/sites/default/files/js/js_rsGiM5M1ffe6EhN-RnhM5f3pDyJ8ZAPFJNKpfjtepLk.js"></script>
-<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-70406268-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
-<script src="https://bachngocsach.com/reader/sites/default/files/js/js_4YjdE7Dyb20FtNidPeeGMqFpWR-MdQwYBZWFW_yafUE.js"></script>
-<script>jQuery.extend(Drupal.settings, {"basePath":"\/reader\/","pathPrefix":"","ajaxPageState":{"theme":"bnstheme","theme_token":"k7_qPmp8Cft4fWpzT2-ieXv6c34fz_uJPagOnUe9Kbs","js":{"sites\/all\/modules\/pwa\/js\/serviceworker-load.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.11\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.effect.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/back_to_top\/js\/back_to_top.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/bnstheme\/js\/bnstheme.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/back_to_top\/css\/back_to_top.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/bnstheme\/system.menus.css":1,"sites\/all\/themes\/bnstheme\/system.messages.css":1,"sites\/all\/themes\/bnstheme\/system.theme.css":1,"sites\/all\/themes\/bnstheme\/field.css":1,"sites\/all\/themes\/bnstheme\/node.css":1,"sites\/all\/themes\/bnstheme\/book.css":1,"sites\/all\/themes\/bnstheme\/views.css":1,"sites\/all\/themes\/bnstheme\/ctools.css":1,"sites\/all\/themes\/bnstheme\/user.css":1,"sites\/all\/themes\/bnstheme\/css\/styles.css":1}},"back_to_top":{"back_to_top_button_trigger":"200","back_to_top_button_text":"Back to Top","#attached":{"library":[["system","ui"]]}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bnsTheme":{"nodeNid":"1865229","nodeType":"chuong","nodeBid":"1859903","user":0},"pwa":{"path":"\/reader\/pwa\/serviceworker\/js","registrationEvent":"windowonload"}});</script>
-  </head>
-<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1865229 node-type-chuong section-yeu-nu-tron-cho-nao-convert" >
-	<script>Drupal.behaviors.bnsTheme.ini();</script>
-			<p id="skip-link">
-			<a href="#main-content" class="element-invisible element-focusable">Skip to content</a>
-		</p>
-			
-<div id="page">
+Những ký ức này mơ mơ hồ hồ, Mặc Họa có đôi khi cũng chia không rõ thật giả.
+Trang sinh Mộng Điệp, không biết là trang sinh Mộng Điệp, vẫn là Điệp Mộng trang sinh.
 
-	<div class="page-head">
-		<div class="page-width">
-		<header class="header" id="header" role="banner">
+Thời gian lâu dài, Mặc Họa cũng liền không xoắn xuýt.
+Trôi qua liền đi qua, hắn hiện tại, chỉ có mười tuổi, sở sinh sống thế giới, là Tu Đạo Giới.
 
-							<a href="/reader/" title="Home" rel="home" class="header__logo" id="logo"><img src="https://bachngocsach.com/reader/sites/default/files/logo.png" alt="Home" class="header__logo-image" /></a>
-			
-			<a href="/reader/user?destination=node/1865229" id="login-user"><span id="login-title">Đăng nhập</span></a>
-							<nav id="main-menu" role="navigation" tabindex="-1">
-					<button id="menu-button" class="button-up"><span></span><span></span><span></span></button>
-					<h2 class="element-invisible">Main menu</h2><ul id="menu-list"><li class="menu-3223 first"><a href="https://bachngocsach.com/forum" title="">Diễn đàn</a></li>
-<li class="menu-210240"><a href="/reader/truyen">Truyện</a></li>
-<li class="menu-3224 last"><a href="/reader/theloai">Thể loại</a></li>
-<li id="header-search"><form action="/reader/search" method="get" accept-charset="UTF-8">
-								<input type="text" id="search-input" name="ten" value="" size="20" maxlength="128" placeholder="Tìm Truyện/Tác giả" />
-							</form></li></ul>				</nav>
-			
-			
-		</header>
-		</div>
-	</div>
+Mà hắn, là một cái tu sĩ.
+Một cái có thể hiểu thấu thiên đạo, lăng hư Cửu Châu, nhấc tay hái nhật nguyệt, lật tay táng sao trời tu sĩ!
+Đương nhiên cũng có thể là một cái, cả một đời luyện khí, đã không thể bay, cũng không biết võ, pháp thuật đều dùng không được mấy cái, hèn mọn mưu sinh tu sĩ......
 
-	<div class="page-body">
-		<div class="page-width">
-		<div id="main">
+Không có Đạo Bia, Mặc Họa đoán chừng bản thân hẳn là hèn mọn cái sau.
+Đạo Bia lơ lửng ở Mặc Họa trong thức hải.
+Rộng lớn cổ sơ, quái trạng không trọn vẹn, bia thân nhìn như hư vô, vừa phảng phất có mênh mông mà hối áo khí tức ở lưu động, hoảng hốt ở giữa, vừa tịch như không minh, không có gì cả......
+Hư vô bia trên mặt, có thể dùng đến vẽ Trận Pháp, mà mỗi họa một lần Trận Pháp, Mặc Họa Thần Thức đều sẽ tăng cường.
 
-			<div id="content" class="column" role="main">
-													<div class="tool-wrap"><button id="option-button" class="tool-button button-up" title="Tùy Chọn" type="button"></button>
-					<ul id="option-list" role="menubar">
-												<li class="option-item" role="menuitem"><ul class="action-list" role="menu"><li class="action-item"><button class="style-theme action-button" type="button">Light</button><button class="style-theme action-button" type="button">Middle</button><button class="style-theme action-button" type="button">Dark</button></li><li class="action-item"><button class="style-font action-button" type="button">Verdana</button><button class="style-font action-button" type="button">Book</button><button class="style-font action-button" type="button">Georgia</button></li><li class="action-item"><button class="style-size action-button" type="button">–</button><button class="style-size action-button" type="button">Aa</button><button class="style-size action-button" type="button">+</button></li></ul></li>					</ul></div>
-								
-				<a id="main-content"></a>
-												
-												
+Tu đạo trăm nghề, Trận Pháp vi tôn!
+Trận Pháp là tu đạo mỗi bên ngành nghề bên trong học được khó khăn nhất, mà học Trận Pháp, trọng yếu nhất chính là Thần Thức!
+
+Trận Pháp bởi Trận Văn cấu thành, chính là Thượng Cổ tu sĩ, bỏ bao công sức thể ngộ thiên đạo sau, mô phỏng vẽ xuống thiên đạo đồ án.
+Trận Pháp đường vân, giống như cổ điển văn tự, lại giống đơn giản hội họa, ẩn chứa trong đó vô tận huyền bí.
+Mà họa Trận Pháp lúc, thức hải câu thông thiên đạo huyền bí, hội hao phí lượng lớn Thần Thức.
+
+Tu sĩ Thần Thức không đủ, không cách nào họa Trận Pháp, nếu không dễ dàng Thần Thức khô kiệt, thậm chí thức hải vỡ vụn mà thân tử đạo tiêu. Mà muốn trở thành một Trận Sư, liền cần không ngừng học tập các loại trận đồ, không ngừng luyện tập các loại Trận Pháp.
+Cho nên Trận Pháp khó học, khó luyện, mà Trận Sư cũng dễ dàng bởi vì Thần Thức không đủ, cư��ng ép họa Trận Pháp làm thức hải sụp đổ mà chết.
+
+Mặc Họa ở Đạo Bia trên họa Trận Pháp, hội tiêu hao Thần Thức, nhưng khi hắn đem vẽ xong Trận Pháp lau đi lúc, những này Thần Thức lại hội nháy mắt trả về, làm Mặc Họa Thần Thức tràn đầy.
+Từ có đến không, lại từ không đến có, như là đại đạo, huyền diệu dị thường.
+Mà cùng lúc đó, Mặc Họa mỗi họa một lần Trận Pháp, Thần Thức đều sẽ có một chút gia tăng, cứ việc nhỏ bé, nhưng đích thật là đang gia tăng.
+
+Theo Mặc Họa biết, Tu Giới là không có tu luyện Thần Thức công pháp, Thần Thức tăng cường đại đa số đều ỷ lại tại cảnh giới đột phá.
+Bởi vậy, dù là gia tăng Thần Thức rất nhỏ bé, cũng đúng cực kỳ khó được.
+Chỉ cần ở Đạo Bia trên không ngừng họa Trận Pháp, Mặc Họa liền có thể tăng lên bản thân Trận Pháp trình độ, đồng thời chỉ cần không ngừng họa Trận Pháp, Thần Thức liền sẽ luôn luôn tăng cường.
+
+Mà Thần Thức cường đại, Mặc Họa liền có thể học tập càng nhiều, cao cấp hơn, cũng càng cường đại Trận Pháp.
+Cuối cùng cũng có một ngày, Mặc Họa có thể nhờ vào đó trở thành một cường đại Trận Sư.
+
+Trận Sư địa vị tôn sùng, dù chỉ là phổ thông, không vào nhất phẩm Trận Sư, thay người họa Trận Pháp, cũng sẽ có khả quan linh thạch thu nhập.
+Một khi trở thành Trận Sư, vẽ ra các loại huyền diệu Trận Pháp, có lập thân gốc rễ, bản thân liền có thể tiếp tục tu luyện, không hội cả đời chỉ là một cái luyện khí tu sĩ.
+Mặc Họa trong lòng yên lặng nói.
+
+Nhưng là trở thành Trận Sư, đồng dạng khó khăn trùng điệp.
+Trận Pháp khó học, Trận Sư càng khó làm.
+Đạo Đình thiết định tu đạo loại bên trong, Trận Sư nhận định là nghiêm khắc nhất, thậm chí nhất khắc nghiệt.
+
+Trận Pháp bởi Trận Văn cấu thành, cơ sở Trận Pháp chỉ bao hàm một đạo Trận Văn, mỗi nhiều một đạo Trận Văn, Trận Pháp sẽ lên một cái cấp bậc, Trận Pháp hiệu dụng cũng sẽ tăng cường, cần thiết Thần Thức cũng sẽ có cực lớn gia tăng.
+
+Vẽ ra vừa đến năm đạo Trận Văn, có thể làm Trận Pháp học đồ.
+Vẽ ra sáu đến tám đạo Trận V��n, có thể xưng là Trận Sư, nhưng loại này Trận Sư, chỉ là phổ thông Trận Sư, không ở Đạo Đình tán thành phẩm giai liệt kê.
+
+Chỉ có vẽ ra chín đạo Trận Văn, đồng thời thông qua Đạo Đình định phẩm khảo hạch, mới có thể trở thành chân chính nhất phẩm Trận Sư.
+Trở thành nhất phẩm Trận Sư, đối với Luyện Khí Kỳ tu sĩ mà nói, cơ hồ tương đương một bước lên trời.
+
+Nhất phẩm Trận Sư, trên cơ bản là các đại gia tộc cùng tông môn thượng khách, cho dù là Trúc Cơ cảnh tu sĩ, cũng không dám tuỳ tiện đắc tội, dù là không làm gì, mỗi tháng đều sẽ có Đạo Đình Thiên Xu Các phát ra linh thạch trợ cấp, cũng sẽ có vô số trẻ tuổi mỹ mạo nữ tu đạp phá cửa hạm, tranh làm đạo lữ.
+
+Mà nhất phẩm Trận Sư trừ khảo hạch rất khó bên ngoài, mỗi cái châu giới còn có danh ngạch hạn định, muốn trở thành nhất phẩm Trận Sư, đã nhìn cố gắng, cũng xem thiên mệnh.
+
+Vận khí không tốt, chỗ châu giới danh ngạch đã đủ hạn định, cho dù có nhất phẩm Trận Sư Trận Pháp tạo nghệ, cũng không hội thu hoạch được định phẩm danh ngạch, chỉ có thể chờ đợi lần sau khảo hạch.
+
+Có chút Trận Sư kiểm tra lấy kiểm tra lấy, liền phí thời gian cả đời.
+Vô số tầng dưới chót tu sĩ lo lắng hết lòng, đọc sách đến bạc đầu, cho đến tóc hoa râm, đều chưa từng đạt thành tấn thăng nhất phẩm Trận Sư tâm nguyện.
+
+Mà Đạo Đình cái gọi là danh ngạch hạn định, cũng chỉ là đại gia tộc cùng đại tông môn dự định tìm cớ mà thôi. Bọn hắn cần nhất phẩm Trận Sư cái danh này, cho mình dòng chính hoặc đệ tử đích truyền dệt hoa trên gấm, để bọn hắn trở thành vạn chúng chú mục thiên tài.
+
+Những cái kia vì trở thành nhất phẩm Trận Sư mà dốc hết tâm huyết tầng dưới chót tu sĩ, chỉ là lòng bàn chân chưa từng vào mắt bụi bặm.
+
+Lúc này đã vào đêm, Mặc Họa nằm ở đệ tử cư trong phòng ngủ, Thần Thức lại chìm vào thức hải, ở Đạo Bia trên không ngừng vẽ lấy Trận Pháp.
+Mặc Họa vẽ Trận Pháp, tên là Song Nguyên Trận, bao hàm hai đạo Trận Văn, xem như cơ sở Trận Pháp một trong.
+
+Nhưng bộ này Trận Pháp, Mặc Họa trước đó chưa hề vẽ thành công tội.
+Luyện khí giai đoạn trước đệ tử, bởi vì Thần Thức không đủ, đồng dạng đều chỉ có thể học ẩn chứa một đạo Trận Văn Trận Pháp. Thông Tiên Môn ngoại môn luyện khí sơ kỳ đệ tử bên trong, có thể đem một đạo Trận Văn học hết đều lác đác không có mấy.
+
+Nhưng đơn nhất Trận Văn, Mặc Họa sớm đã thuộc nằm lòng, vẽ lên đến không chút phí sức.
+
+Mặc Họa muốn học càng khó khăn Trận Pháp, cho nên mỗi lúc trời tối, đều ở Đạo Bia trên luyện tập bao hàm hai đạo Trận Văn Song Nguyên Trận.
+
+Mà đi qua mấy chục cái ban đêm quay đầu luyện tập cùng nước chảy đá mòn cố gắng, Mặc Họa rốt cục thành công.
+Trận Sư học Trận Pháp, mỗi một đạo Trận Văn, đều là một cửa ải, nhiều vẽ ra một đạo Trận Văn, liền leo lên một cái cầu thang.
+Mặc Họa có thể vẽ ra hai đạo Trận Văn, liền mang ý nghĩa hắn Thần Thức cùng Trận Pháp trình độ, đều đã so cùng tuổi tu sĩ cao hơn một mảng lớn.
+
+Ở Thông Tiên Môn ngoại môn luyện khí sơ kỳ đệ tử bên trong, hắn Trận Pháp tiêu chuẩn, hẳn là cũng xem như độc nhất vô nhị.
+Mặc Họa nhẹ nhàng thở ra, đợi giờ Mão bình minh, Thần Thức liền rời đi thức hải, Mặc Họa cũng mở hai mắt ra.
+
+Cứ việc họa một đêm Trận Pháp, Mặc Họa vẫn như cũ Thần Thức thanh minh, cũng sẽ không cảm thấy mỏi mệt, phảng phất bản thân chỉ là an an ổn ổn ngủ một giấc.
+
+Đẩy ra cửa sổ, ánh nắng sáng sớm chiếu vào thanh tú trắng nõn trên mặt.
+Ngoài cửa sổ triêu dương dâng lên, hà khoác vạn dặm.
+
+Mười tuổi Mặc Họa thở nhẹ một hơi, nhìn lên trời bên cạnh cảnh sắc, ánh mắt kiên nghị.
+
+Chỉ cần mình không ngừng luyện Trận Pháp, không ngừng mà tôi luyện Thần Thức, một ngày kia, nhất định có thể trở thành nhất phẩm Trận Sư.
+
+Đến lúc đó như ngày mới lên, chắc chắn phóng ra Tầm Tiên Vấn Đạo một bước dài.
+Cả đời không còn chỉ là luyện khí!
+
+( tấu chương xong)</div>
+        <div class="box-adv box-adv-6416032 hidden">            <div class="box-subcriber col-xs-12 form-group">Hãy nhấn like ở mỗi chương để ủng hộ tinh thần các dịch giả bạn nhé!</div>
+            <div class="box-subcriber col-xs-12 form-group"><a href="http://www.tangthuvien.vn/forum/showthread.php?t=151421" target="_blank">Hãy bớt chút thời gian vào đây bình chọn cho converter bạn yêu thích</a></div>
+            <div class="col-xs-12 text-right">
+                <a href="javascript:void(0);"  onclick="openLogin()"  title="Thích" class="like-control like-chap-6416032 icon-control first ">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    <small>73</small>
+                </a>
+                                <a href="javascript:void(0);" onclick="openWarningBox('6416032')" title="Báo lỗi chương" class="edit-control pull-right"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+                    <h5><a class="more-chap btn " onclick="openNextChap('6416037')" href="javascript:void(0);">Chương 3&nbsp;:&nbsp;Trận Sư</a></h5>
+        <div class="box-chap box-chap-6416037 hidden">Mặc Họa giờ Mão sau khi rời giường, liền bắt đầu thông lệ tu luyện.
+Một canh giờ sau, kết thúc tu hành, liền đến giảng đạo thất, chờ đợi giáo tập.
+
+Giáo tập là trong tông môn giảng bài tiên sinh gọi chung, dạy dỗ ngoại môn đệ tử tu luyện, Trận Pháp, luyện đan, luyện khí các loại cụ thể công khóa. Đồng thời phụ trách ngoại môn đệ tử trên tu hành đốc xúc cùng chỉ đạo.
+
+Thông Tiên Môn cùng Tu Giới những t��ng môn khác một dạng, cũng đem đệ tử chia làm đích truyền, nội môn cùng ngoại môn ba loại.
+
+Tông môn ngoại môn đối ngoại mở ra, lấy truyền đạo học nghề, dạy người tu hành làm chủ, dựa vào thu lấy đệ tử nhập môn Thúc Tu, cũng chính là học phí làm ích lợi. Ngoại môn đệ tử học chính là tông môn đối ngoại mở ra bộ phận truyền thừa, đệ tử tốt nghiệp hoặc lui nghiệp sau, dù cùng tông môn có tình cảm, nhưng không có thực tế liên quan.
+
+Nội môn là tông môn chủ thể, nội môn đệ tử phụ thuộc vào tông môn, tu hành bên ngoài sẽ quản lý tông môn từng cái sản nghiệp, tỷ như linh quáng, Linh địa, động phủ, thương hội các loại.
+Nội môn đệ tử có thể học được tông môn không truyền ra ngoài công pháp và pháp thuật, lấy quan hệ thầy trò gắn kết, cùng tông môn cùng một nhịp thở, không thể chia cắt. Nội môn đệ tử bên ngoài phạm tội, có thể truy cứu nó tông môn, nội môn đệ tử như phản bội sư môn, thường bị coi là đại nghịch bất đạo, hậu quả nghiêm trọng.
+
+Tông môn đệ tử đích truyền, là nội môn đệ tử bên trong dòng chính, những đệ tử này hoặc là cùng chưởng môn hoặc trưởng lão có quan hệ máu mủ, hoặc chính là có cực sâu dày sư đồ tình nghĩa. Đệ tử đích truyền là tông môn hạch tâm, tương lai thường thường hội kế nhiệm tông môn chưởng môn hoặc là trưởng lão các loại cực trọng yếu chức vị.
+
+Đệ tử đích truyền học chính là tông môn hạch tâm nhất công pháp, cùng với khác một chút cấm truyền ra ngoài tuyệt học, đệ tử đích truyền nếu là phản môn, tất bị đuổi giết đến chết.
+
+《 Đạo Luật》 cấm chỉ tu sĩ tư hình cùng lạm sát, truy sát phản môn đệ tử đích truyền, vi phạm Đạo Luật, là phải bị Đạo Đình truy trách. Nhưng phản môn chuyện lớn nhiều về địa phương Đạo Đình Ti quản. Đạo Đình thế lực lớn nhất, mà phân công quản lý mỗi Châu mỗi Giới thậm chí mỗi thành hạ hạt bộ môn Đạo Đình Ti, cũng không phải đều có cường đại tu sĩ trấn thủ.
+
+Đệ tử đích truyền phản môn, việc quan hệ tông môn hạch tâm truyền thừa, quan hệ trọng đại, Đạo Đình Ti không hội nhúng tay. Nhất là đối với một phương cự phách đại tông môn, địa phương Đạo Đình Ti cũng không dám nhúng tay.
+
+Bất quá, những này cùng Mặc Họa quan hệ không lớn.
+Hắn chỉ là nhất phẩm Thông Tiên Môn đệ tử ngoại môn, không phải là nội môn, chớ nói chi là đích truyền, thì thôi nghĩ bị đuổi giết, người khác cũng chướng mắt hắn......
+
+Mặc Họa muốn vào nội môn, đã không có linh thạch, cũng không quan hệ, đoán chừng đời này đều rất không có khả năng, càng không nói đến là tông môn đích truyền.
+Mặc Họa tĩnh tâm ngưng thần, đang ngồi vào một hồi, liền thấy Nghiêm Giáo Tập một mặt nghiêm túc đi đến.
+Nghiêm Giáo Tập đại khái bốn mươi năm mươi tuổi, làm người nghiêm túc, đã có luyện khí chín tầng tu vi.
+
+Thông Tiên Môn bên trong, Nghiêm Giáo Tập địa vị khá cao, bởi vì tất cả giáo tập bên trong, chỉ có Nghiêm Giáo Tập hội Trận Pháp, hơn nữa nghe nói qua mấy năm có khả năng thông qua định phẩm trở thành nhất phẩm Trận Sư.
+
+Thông Tiên Môn tất cả Luyện Khí Kỳ đệ tử Trận Pháp, đều bởi Nghiêm Giáo Tập dạy dỗ, vô luận gia tộc đệ tử, vẫn là phổ thông tán tu, Nghiêm Giáo Tập đều đối xử như nhau, phạm sai lầm, người nào mặt mũi cũng không cho, nên trách cứ liền trách cứ, nơi nào phạt liền xử phạt.
+Cho nên Thông Tiên Môn đệ tử đối với Nghiêm Giáo Tập đã tôn trọng, lại sợ hãi.
+
+Tông môn Thúc Tu mỗi năm giao một lần, cho nên năm học cũng đúng mỗi năm một lần.
+Hôm nay là Thông Tiên Môn năm học tu hành ngày cuối cùng, qua hôm nay, chính là dài đến hơn nửa tháng kì nghỉ. Mà tông môn đệ tử các hạng công khóa khảo hạch thành tích, cũng sẽ vào hôm nay phát hạ đến.
+
+Nghiêm Giáo Tập cầm trong tay một chồng phiếu điểm.
+Các đệ tử thấp thỏm trong lòng, Mặc Họa vốn là không có gì, nhưng nhìn bên cạnh đệ tử từng cái như lâm đại địch dáng vẻ, trong lòng cũng là khẩn trương lên.
+
+Chỉ chốc lát, Mặc Họa liền thu được tông môn của mình khảo hạch thành tích.
+Trận Pháp khảo hạch theo lẽ thường thì Giáp đẳng, đây là Mặc Họa am hiểu nhất. Thông Tiên Môn bên trong, Trận Pháp có thể được Giáp đẳng đệ tử không nhiều, Mặc Họa chính là một trong số đó.
+
+Mặc Họa tu vi chỉ định là Ất đẳng, cũng không phải hắn tu luyện không cố gắng, mà thực t��� là căn cốt có hạn, trung phẩm thứ đẳng Tiểu Ngũ Hành linh căn, tu luyện thế nào cũng đều như thế, so với bên trên thì không đủ, so phía dưới cũng dư là không nhiều.
+
+Cái khác mấy môn khóa, nếu là tốn thời gian có thể học tốt, tỉ như Đạo Lịch Thông Sử, Luyện Khí Khái Luận các loại, cũng trên cơ bản là Giáp đẳng. Mà cần tốn linh thạch mua vật liệu mới có thể học tốt, tỉ như luyện đan, chế phù các loại, không phải là Ất chính là Bính.
+
+Mặc Họa gia cảnh bần hàn, lò luyện đan đều mượn không nổi, tự nhiên học được không tốt. Khảo hạch thời điểm, cũng chỉ có thể dựa vào cảm giác đến luyện, có thể thành hay không toàn dựa vào may rủi, thành tích không chỉ có xem vận khí, hơn nữa phiêu hốt bất định, rất không ổn định.
+
+Nhưng thành tích tổng thể xem ra, còn được. Tục ngữ nói, một tuấn che trăm xấu, dù sao Trận Pháp khó học, ở Trận Pháp trên có thể được Giáp đẳng, đã coi như không tệ.
+
+Nghiêm Giáo Tập nói mấy câu, liền lâm thời rời đi. Trong phòng các đệ tử liền lẫn nhau liếc nhìn thành tích, xì xào bàn tán.
+
+"Mặc H���a, ngươi Trận Pháp lại được "Giáp" A! " Có đệ tử lén lút nhìn thoáng qua Mặc Họa phiếu điểm, sau đó cảm thán nói.
+"Lại là giáp......"
+"Ta một mực là Ất......"
+"Ta vẫn là Bính đây. "
+"Trận Pháp thật là khó học, ta nhìn thấy Trận Pháp đầu liền lớn......"
+"......"
+Các đệ tử nhao nhao hướng Mặc Họa bên người vây tới.
+
+"Hừ! " Có cái mặc đạo bào màu trắng bạc Tiền Gia đệ tử, thấy thế bất mãn, hừ lạnh một tiếng, nói:
+.
+"Có gì đặc biệt hơn người, cũng liền vẽ vẽ những này đơn giản Trận Pháp tông môn, mới có thể có cái "Giáp". "
+
+"Vậy ngươi được cái gì? " Có đệ tử không phục hỏi ngược lại.
+"Ta tại sao phải nói cho ngươi biết? " Tiền Gia đệ tử khinh thường.
+
+Một người đệ tử khác vụng trộm nhìn hắn phiếu điểm, sau đó cười to nói: "Hắn được cái Bính! "
+Các đệ tử đều sửng sốt một chút, cười vang.
+"Ngươi được cái Bính, còn cười người khác là giáp, da mặt thật dày! "
+"So luyện khí lô đều dày! "
+"Vẫn là Tiền Gia đệ tử đây, đần quá a, còn không bằng ta đây, ta đều được cái "Ất". "
+
+Tiền Gia đệ tử thẹn quá hoá giận, "Giáp đẳng thì thế nào? Tán tu không Trận Sư, các ngươi hiểu không? "
+Hắn dùng tay chỉ Mặc Họa bọn hắn, "Các ngươi đám tán tu này, ếch ngồi đáy giếng, không có truyền thừa, cả một đời, nghe kỹ, là cả một đời, cũng không thể ra một cái Trận Sư. Phi, còn Giáp đẳng! Ghi nhớ, tán tu bên trong, vĩnh viễn không có khả năng ra chân chính Trận Sư! Nếu là nghe không rõ, ta có thể lặp lại lần nữa. "
+"Tán tu vĩnh viễn không xứng làm Trận Sư! "
+
+Chung quanh đệ tử giữ im lặng.
+Mặc Họa nhìn đồ đần một dạng mà nhìn xem hắn, sau đó đứng dậy, hướng về phía Tiền Gia đệ tử sau lưng thi lễ một cái, nói
+"Nghiêm Giáo Tập tốt! "
+
+Tiền Gia đệ tử như bị sét đánh, đầu cứng đờ chuyển qua, quả nhiên phát hiện Nghiêm Giáo Tập đang đứng ở phía sau hắn, sắc mặt tái xanh.
+
+"Tông môn là dùng đến truyền đạo cùng tu đạo, không phải là để ngươi đến ganh đua so sánh cùng chửi bới đồng môn ! "
+"Bản thân Trận Pháp học được khó coi, lại còn có mặt mũi đi chế giễu đồng môn? "
+"Hiện tại đi bên ngoài phạt đứng, thẳng đến trời tối mới thôi. "
+"Lại đem cơ sở Ngũ Hành trận văn vẽ lên một trăm lần, sang năm nhập học thời điểm cho ta nhìn, họa không ra, ngươi cũng không cần đến......"
+
+Tiền Gia đệ tử mặt xám như tro, nhưng không dám phản bác nửa câu.
+Nghiêm Giáo Tập thân phận cao, ngay cả Tiền Gia dòng chính đệ tử cũng có thể huấn, huống chi hắn cái này huyết thống không quan trọng chi nhánh.
+
+Tiền Gia đệ tử xám xịt đi phạt đứng.
+Nghiêm Giáo Tập đứng tại Mặc Họa trước người, trầm mặc một lát, đưa tay vỗ vỗ Mặc Họa nhỏ gầy bả vai, thở dài nói: "Đừng quản người khác nói cái gì, hảo hảo học. "
+
+Mặc Họa thần sắc như thường, cung kính hướng Nghiêm Giáo Tập thi lễ một cái, "Đệ tử ghi nhớ. "
+Nghiêm Giáo Tập nhẹ gật đầu, về sau đi đến giáo tập chỗ ngồi, lại đối các đệ tử phân phó vài câu, liền tuyên bố tông môn nghỉ phép hàng năm, có thể trở về nhà.
+
+Các đệ tử đè nén tâm tình kích động, hướng giáo tập hành lễ, cảm tạ giáo tập một năm về việc tu hành dạy bảo, sau đó hoa một tiếng tan tác như chim muông.
+Tông môn ngh�� phép hàng năm, các đệ tử hân hoan nhảy cẫng.
+Mặc Họa nhìn xem nhưng trong lòng phức tạp.
+Những này Luyện Khí Kỳ các đệ tử, phần lớn niên kỷ còn nhỏ, vô ưu vô lự, xa không biết tu đạo sinh hoạt gian khổ.
+
+Nghĩ đến phụ thân săn yêu sau, vết thương đầy người cùng mẫu thân mặt mũi tiều tụy, Mặc Họa trong lòng mỏi nhừ, không khỏi thở dài.
+Trở thành nhất phẩm Trận Sư, còn xa xa khó vời, nhưng ở đủ khả năng phạm vi bên trong, hắn muốn để cha mẹ trôi qua tốt một chút.
+
+Mặc Họa cất kỹ phiếu điểm, trong ngực cất mười hai mai linh thạch, rời đi Thông Tiên Môn về sau không có về nhà, mà là hướng phường thị đi đến.
+
+----------
+
+Có quan hệ nhân vật chính xuyên qua thiết lập:
+Thức tỉnh ký ức, không phải truyền thống hồn xuyên, nhục thân là bản thân, cùng phụ mẫu cũng có quan hệ máu mủ.
+Nhân vật chính thiết lập là Tu Đạo Giới một cái mười tuổi hài tử, chỉ là có một chút người hiện đại tư duy cùng nhận biết.
+
+( tấu chương xong)</div>
+        <div class="box-adv box-adv-6416037 hidden">            <div class="box-subcriber col-xs-12 form-group">Hãy nhấn like ở mỗi chương để ủng hộ tinh thần các dịch giả bạn nhé!</div>
+            <div class="box-subcriber col-xs-12 form-group"><a href="http://www.tangthuvien.vn/forum/showthread.php?t=151421" target="_blank">Hãy bớt chút thời gian vào đây bình chọn cho converter bạn yêu thích</a></div>
+            <div class="col-xs-12 text-right">
+                <a href="javascript:void(0);"  onclick="openLogin()"  title="Thích" class="like-control like-chap-6416037 icon-control first ">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    <small>70</small>
+                </a>
+                                <a href="javascript:void(0);" onclick="openWarningBox('6416037')" title="Báo lỗi chương" class="edit-control pull-right"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+                    <h5><a class="more-chap btn " onclick="openNextChap('6416039')" href="javascript:void(0);">Chương 4&nbsp;:&nbsp;Tịch Hỏa Tr&acirc;m</a></h5>
+        <div class="box-chap box-chap-6416039 hidden">Phường thị là cung cấp tầng dưới chót tu sĩ giao dịch tu hành vật phẩm địa phương, loại phức tạp, đủ loại, đan dược, Trận Pháp, Linh Khí cái gì cần có đều có, chỉ là phẩm giai đồng dạng đều không cao, hơn nữa phẩm chất vàng thau lẫn lộn.
+Tới gần cửa ải cuối năm, lúc này trong phường thị tu sĩ rất nhiều, người đến người đi, huyên náo ồn ào.
+
+Mặc Họa đi thẳng tới cuối phố một cái quán nhỏ trước, chủ quán là cái lão giả, họ Tôn, người quen hô Tôn lão đầu, nhi tử ở Vạn Bảo Lâu làm tiểu quản sự, ngẫu nhiên có chút Vạn Bảo Lâu không cần thứ phẩm hàng hóa, con của hắn liền giá thấp cầm, giao cho hắn ở đầu đường bày quầy bán hàng bán.
+
+Tôn lão đầu chính đang hét lớn, ngẩng đầu liền thấy Mặc Họa thở hồng hộc chạy tới, trắng nõn đỏ bừng khuôn mặt bé nhỏ, nhịn không được trêu ghẹo nói:
+"Tiểu huynh đệ hôm nay lại đến xem cái gì Linh Khí, không hội vừa cùng trước mấy ngày một dạng, chỉ xem không mua đi......"
+
+Mặc Họa tay nhỏ vung lên, "Mua! "
+Tôn lão đầu ngạc nhiên nói: "Cách cửa ải cuối năm còn có mấy ngày đi, nhà ngươi tiền mừng tuổi cho sớm như vậy? "
+
+Mặc Họa không vui nói: "Cái gì tiền mừng tuổi, đây là chính ta kiếm được ! " Nói xong vỗ vỗ bên hông túi.
+
+Tôn lão đầu nghe túi ở giữa linh thạch đụng ra thanh thúy thanh vang, mừng rỡ, vội vàng nói:
+"Đan trận phù khí, ta chỗ này cái gì cần có đều có, hàng đẹp giá rẻ, già trẻ không gạt, hơn nữa đều là Vạn Bảo Lâu đồ vật, phẩm chất thượng thừa, tiểu hữu muốn mua chút gì? "
+
+Muốn thật sự là phẩm chất thượng thừa, Vạn Bảo Lâu liền tự mình bán, nơi nào còn có thể lưu lạc đến phường thị. Bất quá Mặc Họa cũng không quan tâm, Vạn Bảo Lâu đồ vật hắn cũng mua không nổi.
+
+"Kháng hỏa Linh Khí có sao? "
+Tôn lão đầu lộ ra quả là thế thần sắc, lật ra một cái vải bố bao, mở ra bày ở Mặc Họa trước mặt.
+"Mấy ngày trước đây tiểu hữu đề cập qua một lần, ta liền lưu tâm, trở về lại cố ý tìm mấy món, tất cả đều là thượng giai kháng hỏa Linh Khí, hơn nữa mang theo thuận tiện, kiểu dáng tinh mỹ, tiểu hữu nhìn xem như thế nào? "
+
+Mặc Họa kinh ngạc nhìn Tôn lão đầu một chút, nghĩ thầm không hổ là ở phường thị bày quầy bán hàng mấy chục năm, có một chút mua bán cơ hội, đều chuẩn bị như thế đầy đủ.
+Bày ở Mặc Họa trước mặt Linh Khí đủ loại kiểu dáng, c�� chiếc nhẫn, có ngọc bội, có đế đèn, còn có một cái cái lồng cùng khăn lụa......Chỉ xem kiểu dáng, đã là cái này trong phường thị nhất đầy đủ.
+
+Mặc Họa quan sát tỉ mỉ một lần, sau đó nhặt lên một cây tạo hình cổ điển, nhưng lại không mất tinh xảo cây trâm, hỏi: "Đây là cái gì cây trâm? "
+
+Tôn lão đầu nói "Cái này gọi Tịch Hỏa Trâm, thuộc về chế thức Linh Khí, dùng tài liệu công nghệ đều có thống nhất tiêu chuẩn, phía trên có khắc sơ cấp kháng hỏa Trận Pháp, cần dùng linh thạch nạp năng lượng, sử dụng lúc kích phát Trận Pháp có thể ngăn cách hỏa khí, khiến người quanh thân nhẹ nhàng khoan khoái. Mặc dù muốn tiêu hao linh thạch, nhưng hoa một viên linh thạch liền có thể dùng ba tháng, có thể nói tương đương kinh tế áp dụng......"
+
+Mặc Họa hồ nghi nói: "Vạn Bảo Lâu chế thức Linh Khí, có thể đặt ở ngươi nơi này bán, nhất định là có tì vết a......"
+
+Tôn lão đầu cười nói: "Không sai, ngươi biết còn không ít. Lão già ta cũng không gạt ngươi, nếu là không có tì vết, đặt ở Vạn Bảo Lâu, giá tiền chí ít so ta chỗ này mắc hơn gấp đôi, nhưng nói có tì vết, cũng là không đến mức......"
+
+Tôn lão đầu chỉ vào cây trâm trên hoa mẫu đơn văn, "Luyện khí sư ở khắc đóa này mẫu đơn thời điểm, nhiều họa mấy bút, cái này liền không hợp quy phạm, cho nên cái này cây trâm cũng liền được xếp vào thứ phẩm, nhưng bên trong Trận Pháp hoàn hảo không chút tổn hại, công hiệu vẫn là một dạng. "
+
+Mặc Họa nhẹ gật đầu, trong lòng cũng cảm thấy cái này cây trâm thích hợp nhất, liền hỏi: "Bao nhiêu linh thạch? "
+Tôn lão đầu vuốt vuốt sợi râu, "Một ngụm giá, mười lăm mai linh thạch! "
+Mặc Họa lắc đầu, "Năm mai! "
+
+Tôn lão đầu trừng lớn hai mắt, "Người nào dạy ngươi như thế trả giá ? "
+
+Mặc Họa có chút ngượng ngùng, "Ta ở trước sạp khác nghe, bọn hắn đều là như thế trả giá......"
+
+Tôn lão đầu đau lòng nhức óc, "Thật sự là thế phong nhật hạ, hảo hảo hài tử đều cho làm hư ! " Lại nói "Mười bốn mai, không thể ít hơn nữa ! "
+Mặc Họa cũng thử thăm dò thêm một điểm, "Sáu cái? "
+......
+
+Một phen cò kè mặc cả sau, giá cả cuối cùng định ở mười cái.
+Tôn lão đầu cảm th���y không thể lại thấp, một điểm linh thạch cũng không thể thiếu, mà Mặc Họa trước đó cũng nghe qua cái khác sạp hàng Linh Khí giá cả, cơ bản cũng không tiếp tục tiện nghi, liền đáp ứng.
+
+Tôn lão đầu tiếp nhận Mặc Họa trong tay linh thạch, đem cây trâm dùng tiện nghi nhưng tinh mỹ hộp giấy gói kỹ đưa cho Mặc Họa, miệng bên trong không ngừng nhắc tới:
+"Cháu của ta nếu là có ngươi một nửa cơ linh, ta liền nhường hắn tới giúp ta xem quầy, đáng tiếc a, ta cháu trai kia quá ngốc, thấy người sống lời cũng không dám nói. "
+
+Mặc Họa cầm cây trâm vừa lòng thỏa ý, phất phất tay cùng Tôn lão đầu từ biệt, sau đó bước chân nhẹ nhàng đi.
+
+Chỗ tiếp cận bày quầy bán hàng chủ quán cười nói: "Tôn lão đầu, lần này có thể lỗ vốn đi! "
+
+Tôn lão đầu vuốt vuốt râu ria, "Vốn là không lỗ, bất quá là kiếm ít điểm mà thôi. "
+.
+Chủ quán lại hiếu kỳ nói "Mười cái linh thạch cũng không tính cái số lượng nhỏ, không biết đứa nhỏ này mua cây trâm là đưa cho người nào. "
+
+"Tịch Hỏa Trâm là tị hỏa, tránh chính là lò lô trên hỏa khí, còn có thể đưa cho ai đây? "
+Nhìn xem Mặc Họa thân ảnh đần dần đi xa, Tôn lão đầu khẽ thở dài một cái, "Là cái hảo hài tử a! "
+
+Mặc Họa nhà ở Thông Tiên Thành biên giới một chỗ vắng vẻ trên đường, phòng ở là cũ, cũng không tính lớn, vừa vặn đủ một nhà ba người ở, phụ cận ở cũng đều là luyện khí tầng dưới chót tán tu, dựa vào làm chút tạp dịch, làm công nhật mưu sinh, dù không giàu có, nhưng khói lửa nồng.
+
+Lúc chạng vạng tối, mọi nhà phiêu khởi khói bếp, đốt lên ố vàng ánh đèn.
+Mặc Họa chạy vào cửa, hô: "Nương, ta trở về ! "
+
+Buồng trong đi ra một người mặc mộc mạc áo vải, khuôn mặt uyển lệ nữ tử, thấy Mặc Họa, đầy mắt đều là kinh hỉ, nhịn không được đem Mặc Họa kéo đến trước mặt, lại là sờ đầu, lại là bóp khuôn mặt, chốc lát nói: "Có phải là tu hành quá cực khổ, thật gầy quá. "
+
+Mặc Họa nói "Không ốm, " Sau đó móc ra hộp, "Nương, đây là tặng cho ngươi! "
+Nữ tử sửng sốt một chút, tiếp nhận hộp mở ra, phát hiện là một cái cây trâm.
+
+"Đây là Tịch Hỏa Trâm, nương ngươi ở tửu lâu phòng bếp làm giúp, thời gian dài thụ hỏa khí hun sấy, đối với thân thể không tốt, cái này cây trâm có thể kháng hỏa khí, người cũng sẽ biết mát mẻ rất nhiều. "
+Nữ tử họ Liễu, tên Như Họa, là Mặc Họa mẫu thân, Thông Tiên Thành bên trong một Luyện Khí Kỳ tán tu.
+
+Tán tu sinh hoạt vốn là gian khổ, không có cái gì quá tốt chuyện này có thể kiếm lời linh thạch, nếu có hài tử, nuôi dưỡng càng là khó khăn, ăn mặc chi phí, nhất là bái nhập tông môn tiền trả công cho thầy giáo, còn có tu luyện dùng các loại vật liệu, đối với phổ thông tu sĩ mà nói, đều là không ít chi tiêu.
+
+Liễu Như Họa nấu cơm tay nghề tốt, trong thành một nhà tiểu tửu lâu phòng bếp giúp việc bếp núc.
+Đại tửu lâu sẽ dùng luyện khí sư luyện chế lò lô, lô trên có Trận Pháp, tiêu hao linh thạch, đem linh khí chuyển hóa thành hỏa lực.
+
+Tiểu tửu lâu vì tiết kiệm chi phí, không lấy linh thạch cung cấp lửa, mà sẽ để cho có Hỏa Linh Căn tu sĩ tiêu hao linh lực, ngưng tụ thành nấu nướng hỏa lực. Một lúc sau, thân thể khó tránh khỏi thụ hỏa khí xâm nhập, kinh mạch khô cạn, mà kèm thêm phổi đau ho khan triệu chứng.
+
+Liễu Như Họa ở tửu lâu giúp việc bếp núc lúc, liền muốn thỉnh thoảng tiêu hao linh lực cung cấp lửa, mỗi tháng có khoảng chừng ba mươi linh thạch tiền lương, cứ việc đối thân thể có hại, nhưng cái này đã coi như là tán tu có thể tìm không sai việc cần làm, rất nhiều luyện khí tu sĩ muốn làm còn không có cơ hội.
+
+Nhìn xem trong tay cây trâm, Liễu Như Họa mím môi, không nói gì.
+Mặc Họa vội vàng nói: "Mua cây trâm linh thạch là ta giúp đồng môn bận bịu kiếm được, không có hãm hại lừa gạt, cũng không có trộm cướp! "
+
+Liễu Như Họa không chịu được nở nụ cười, trong lòng ấm áp lại có chút chua chua, "Cái này cây trâm mẫu thân không thể nhận, ngươi còn nhỏ, tương lai tu hành cần hoa linh thạch nhiều nữa đây, có thể bớt thì bớt, mẫu thân bản thân có thể chiếu cố tốt bản thân, không cần ngươi quải niệm......"
+
+Mặc Họa tự tin nói: "Chuyện tương lai tương lai lại nói, nói không chừng ta tương lai trở thành Kim Đan Nguyên Anh đại tu sĩ, muốn bao nhiêu linh thạch, có bao nhiêu linh thạch. "
+Liễu Như Họa cười ra tiếng, ngón tay chỉ lấy Mặc Họa cái trán, "Tuổi nhỏ như thế, liền học được khoác lác. "
+
+"Nương, ngài liền cầm lấy đi, ta cùng người khác giảng nửa ngày giá mới mua được, ngài không cần, vậy ta không phải là uổng phí nửa ngày công phu a. "
+Nói xong Mặc Họa liền lấy qua cây trâm, thay Liễu Như Họa cắm ở trên búi tóc, sau đó vừa chạy đến trong phòng xuất ra tấm gương.
+"Nhìn xem, có đẹp hay không! "
+
+Liễu Như Họa thấy trong kính nữ tử phối thêm thanh lịch cây trâm, lộ ra đoan trang tú lệ, lại gặp nhi tử vụt sáng vụt sáng mắt to, nhất thời mềm lòng, liền ôn nhu nói: "Cái này cây trâm ta nhận lấy, lần sau lại cho đồ vật ta cũng không thu. "
+
+"Ừ, " Mặc Họa liên thanh đáp ứng, "Nương, cơm tốt sao? Ta đói bụng. "
+"Tốt, đều là ngươi thích ăn, ăn nhiều một chút! "
+Liễu Như Họa tay nghề rất tốt, mặc dù là đơn giản thức ăn chay, cũng không chứa cái gì linh khí, nhưng làm được tinh xảo mà mỹ vị. Mặc Họa ăn xong cùng mẫu thân nói hội thoại, liền trở về phòng đọc sách.
+
+Giờ Tý qua đi, Mặc Họa vừa tiến vào thức hải, ở trên tấm bia đá luyện tập một đêm Trận Pháp, tỉnh lại lúc đã là giờ Mão.
+Mặc Họa nhắm mắt đả tọa, trong tay nắm bắt một viên linh thạch, thông lệ tu luyện.
+Lại mở mắt lúc, trời đã hơi trắng, ánh mặt trời sáng rỡ chiếu vào trong phòng. Mặc Họa nằm duỗi lưng một cái, chuẩn bị rời giường, sau đó liền nghe ngoài phòng có tiếng bước chân nặng nề.
+
+Mặc Họa xoay người nằm lỳ ở trên giường, thăm dò từ khe cửa nhìn lại, thấy một cái đầy người vết máu mà phong trần mệt mỏi nam tử đi vào phòng, người này là Mặc Họa phụ thân—— Mặc Sơn.
+
+( tấu chương xong)</div>
+        <div class="box-adv box-adv-6416039 hidden">            <div class="box-subcriber col-xs-12 form-group">Hãy nhấn like ở mỗi chương để ủng hộ tinh thần các dịch giả bạn nhé!</div>
+            <div class="box-subcriber col-xs-12 form-group"><a href="http://www.tangthuvien.vn/forum/showthread.php?t=151421" target="_blank">Hãy bớt chút thời gian vào đây bình chọn cho converter bạn yêu thích</a></div>
+            <div class="col-xs-12 text-right">
+                <a href="javascript:void(0);"  onclick="openLogin()"  title="Thích" class="like-control like-chap-6416039 icon-control first ">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    <small>69</small>
+                </a>
+                                <a href="javascript:void(0);" onclick="openWarningBox('6416039')" title="Báo lỗi chương" class="edit-control pull-right"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+                    <h5><a class="more-chap btn " onclick="openNextChap('6416047')" href="javascript:void(0);">Chương 5&nbsp;:&nbsp;Mặc Sơn</a></h5>
+        <div class="box-chap box-chap-6416047 hidden">﻿
 
 
+ Mặc Sơn là một Luyện Khí tám tầng Liệp Yêu Sư, lấy săn giết yêu thú, lột lấy yêu thú tài liệu mưu sinh, nghe tương đối uy phong, nhưng kỳ thật rất vất vả, phong hiểm cũng rất lớn. 
 
-<article class="node-1865229 node-chuong clearfix">
-  
-<header>
-  <nav id="chuong-nav" role="navigation"><a href="/reader/yeu-nu-tron-cho-nao-convert" class="page-up">Yêu Nữ Trốn Chỗ Nào [C]</a> ≫ <a href="/reader/yeu-nu-tron-cho-nao-convert/muc-luc#nid-1865229" class="page-index">Mục lục</a></nav><br>
-      <center>
-        <style>
-          .AdsNode_top { width: 320px; height: 100px; }
-          @media(min-width: 500px) { .AdsNode_top { width: 468px; height: 60px; } }
-          @media(min-width: 800px) { .AdsNode_top { width: 728px; height: 90px; } }
-        </style>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle AdsNode_top"
-            style="display:inline-block"
-            data-ad-client="ca-pub-9136698491698713"
-            data-ad-slot="5425528056">
-          </ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </center>
-    <nav class="chuong-nav" role="navigation"><a href="/reader/yeu-nu-tron-cho-nao-convert/tkrd" class="page-prev captainicon chuong-button" title="Chương 39: Ngươi Là Không Hiểu Rõ Qua Ta"><span class="element-invisible">Previous</span></a><span class="page-jump captainicon chuong-button" title="Nhảy Chương"></span><a href="/reader/yeu-nu-tron-cho-nao-convert/lxry" class="page-next captainicon chuong-button" title="Chương 41: Cây Của Tổng Quản Đại Nhân"><span class="element-invisible">Next</span></a></nav>  <h1 id="chuong-title" class="page__title">Chương 40: Làm Khám Nghiệm Tử Thi Khác Một Cái Thân Phận</h1>
-</header>
+Tu Giới đại đa số yêu thú xa xa mạnh hơn nhân loại tu sĩ, săn giết dị thường khó khăn. 
 
-  <div id="info">Số từ: 2311<p>Convert: doanhmay<br />
-Nguồn: tangthuvien</p>
-</div><div class="qc-chuong-top">
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <ins class="adsbygoogle"
-    style="display: block;"
-    data-ad-client="ca-pub-9136698491698713"
-	data-ad-slot="1489658370"
-    data-ad-format="auto"
-    data-full-width-responsive="false">
-	</ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div><div id="noi-dung"><p>"Đệ tử cho rằng, hắn là chết vào độc rắn, hẳn là một loại kịch độc rắn biển."</p>
-<p>Lý Hiên định liệu trước cùng Lưu Tam Giới nhìn nhau: "Người này bắp thịt toàn thân lỏng lẻo, cơ gân phản xạ yếu kém, cái này ở một cái tứ trọng lâu thuật tu trên người, rất không nên —— "</p>
-<p>Cân nhắc đến cơ gân phản xạ cái này hiện đại danh từ, ở thời đại này là không có, hắn cố ý gõ gõ người chết đầu gối, có thể thấy được người sau chân không có rõ ràng trên nhấc động tác.</p>
-<p>Kỳ thực người chết ở vượt quá nhất định tử vong thời gian sau, là sẽ không xuất hiện đầu gối nhảy phản xạ.</p>
-<p>Có thể Lý Hiên biết rõ chỗ ở mình chính là cái siêu phàm thế giới, các tu sĩ tố chất thân thể đều siêu phàm thoát tục, hầu như mỗi một cái tứ trọng lâu cảnh giới trở lên tu sĩ cũng phải xem là siêu nhân đến đối xử. Vì lẽ đó bọn họ thi thể kiểm tra, cũng tuyệt không có thể tính toán theo lẽ thường.</p>
-<p>Lý Hiên ngay sau đó, lại chỉ về người chết bạo lộ ra vị trí trái tim.</p>
-<p>"Thân thể của hắn mỗi cái vị trí, đều xuất hiện nghiêm trọng tím cám, đây là nghẹt thở mà chết đặc thù. Còn có nơi này, cơ tim hoành văn mơ hồ, có hòa tan hiện tượng, bàng quang bên trong cũng có màu nâu đỏ máu đái. Tổng hợp trở lên, ta phán đoán đây là một loại kịch liệt rắn biển độc tố dẫn đến."</p>
-<p>Kỳ thực người chết còn có cấp tính nhiễm trùng đường tiểu bệnh trạng cùng cao giáp máu chứng, bất quá bệnh trạng đều tương đối nhẹ nhàng.</p>
-<p>Mà rắn biển độc tố bình thường đều là thần kinh độc tố cùng bắp thịt độc tố chen lẫn hỗn hợp độc tố, trước Lưu Tam Giới triển khai mấy cái pháp thuật, chính là vì nghiệm chứng điểm này.</p>
-<p>Cái thời đại này làm khám nghiệm tử thi đều là kinh nghiệm khoa học, rất ít thuật tại văn tự, các loại danh từ cũng phi thường thiếu thốn. Cái gì thần kinh độc tố cùng bắp thịt độc tố loại hình, đều là thế giới này không có.</p>
-<p>Liền như Lưu Tam Giới vừa nãy triển khai 'Nghiệm độc thuật', các Linh ngỗ đều là cuối cùng thông qua pháp thuật ảnh hưởng dòng máu màu sắc để phán đoán.</p>
-<p>Điều này cần nhất định kinh nghiệm, chỉ vì ở mỗi cái tử vong đoạn thời gian, máu tươi phản ứng đi ra màu sắc đều không giống nhau. Mà lại bất luận cái đoạn nào thời gian, những kia máu tươi màu sắc đều không phải rất rõ ràng, cần kinh nghiệm phong phú Linh ngỗ mới có thể phán đoán.</p>
-<p>"Độc tố thì lại đến từ chính hắn cánh tay trên lỗ kim. Cái này hẳn là một loại nhỏ nhập lông trâu châm, lỗ kim không có sưng đỏ, xuất huyết, vì lẽ đó đau đớn sẽ rất nhỏ. Lại phối hợp một loại nào đó thuốc gây mê sử dụng, người chết khả năng toàn bộ hành trình đều sẽ không có bất kỳ cảm giác gì."</p>
-<p>Lúc này Lý Hiên lại đẩy ra rồi người chết trên cánh tay quần áo, mọi người cẩn thận chú ý, quả nhiên trông thấy người sau cánh tay trên nơi có một cái nhỏ bé, không dễ phát hiện lỗ kim.</p>
-<p>"Đây là đệ tử thiển kiến, có chỗ nào không đúng, xin mời lão sư vui lòng chỉ trích."</p>
-<p>"Chỉ trích cái gì? Cái kia xác thực là rắn biển độc tố gây nên." Lưu Tam Giới nhìn về phía Lý Hiên trong ánh mắt, rõ ràng ngậm lấy mấy phần kinh ngạc cùng vui mừng: "Như vậy Lý Hiên ngươi lại có biết, đây là một loại nào rắn biển độc rắn?"</p>
-<p>Cái vấn đề này, Lý Hiên thì có chút luống cuống. Theo hắn biết, bất kể là Ngân Hoàn rắn biển, vẫn là Trường Vẫn rắn biển, độc tố đều sẽ không mạnh đến trình độ này.</p>
-<p>Căn cứ hắn từ Giang Hàm Vận nơi đó hiểu rõ đến tình huống, người chết ở ngục bên trong vẫn không có bất kỳ khác thường gì, là Hỏa Nha đô người đến Giang Ninh huyện nha thẩm vấn người này thời điểm, này người mới xuất hiện nghẹt thở bệnh trạng.</p>
-<p>Mà từ phát tác đến tử vong, tổng cộng cũng chưa tới nửa khắc thời gian.</p>
-<p>Lý Hiên nghĩ thầm cái này độc, quá nửa là thế giới này độc nhất đặc sản, có thể vấn đề là hắn không biết a.</p>
-<p>Thế giới này sinh vật chủng loại rất phong phú, nguyên thân trong ký ức rắn biển thì có hơn mười loại, hắn không biết càng nhiều, Lý Hiên nơi nào có thể biết loại độc tố này là đến từ chính loại nào rắn biển.</p>
-<p>Hắn suy nghĩ một chút, sau đó lúng túng nở nụ cười: "Đệ tử không biết."</p>
-<p>Lưu Tam Giới không khỏi hừ lạnh một tiếng: "Quả nhiên vẫn là vô học! Ta trước đây liền từng nói với ngươi, nếu muốn làm tốt làm khám nghiệm tử thi làm nghề này, bình thường phải nhiều đọc nhìn thêm, uyên bác hiểu biết. Ta trước chỉ định cái kia phân sách đơn, ngươi đến tột cùng nhìn mấy quyển?"</p>
-<p>Đó là một quyển đều không thấy ——</p>
-<p>Lý Hiên nghĩ ngợi nói cái này thật sự không là hắn nồi, là nguyên thân quá lười. Hắn xuyên qua tới sau cũng nghĩ kỹ hiếu học tập, phong phú chính mình tri thức căn bản, có thể vấn đề là không thời gian.</p>
-<p>Đặc biệt là là Lãm Nguyệt lâu sinh biến sau khi, các loại dạng chuyện phiền toái lũ lượt kéo đến, để cho hắn không chút không có phân tâm.</p>
-<p>Lưu Tam Giới cũng không phải thật buồn bực, khi hắn xoay người đối mặt Giang Hàm Vận cùng Lôi Vân mấy người thì thần sắc ngược lại là ngậm lấy mấy phần vui mừng cùng vui mừng: "Đại thể liền như ta đệ tử này từng nói, người này là cánh tay tao ngộ châm đâm, chết vào Huyết Vân xà độc. Rắn này kịch độc, một giọt nọc độc, liền có thể ở thời gian vô cùng ngắn trong độc giết ngàn người. Người chết thể chất coi như không tệ, chống lại một quãng thời gian , nhưng đáng tiếc hắn tu vị bị phong, cuối cùng ở nửa nén hương bên trong chết thảm."</p>
-<p>Chờ đến vị này thi thể kiểm tra kết quả, Giang Hàm Vận, Lôi Vân mấy người một điểm đều không ngừng lại đi ra cái này làm khám nghiệm tử thi phòng. Người sau trước khi đi, lại sâu sắc nhìn Lý Hiên một chút, sau đó một tiếng bật cười: "Vẫn có chút bản lĩnh, không giống như là đồn đại bên trong vô học, không trách ngươi sẽ mang theo bên người."</p>
-<p>Giang Hàm Vận ghi hận cái tên này nói nàng Giang Xuân Cung, liếc hắn nhìn đến một cái sau khi, liền không làm tiếp phản ứng.</p>
-<p>Lý Hiên cũng chuẩn bị đuổi tới, Lưu Tam Giới lại bắt hắn cho gọi lại, vị này trực tiếp đem một quyển có tới tự điển dày sách ném qua: "Cái này bản bút ký, chính là ta hơn hai mươi năm đến làm khám nghiệm tử thi tâm đắc, cho ta thật tốt nghiên tập. Trong vòng một tháng nhất định phải đưa ta."</p>
-<p>Lý Hiên thì lại vẻ mặt kinh ngạc nhìn vị này, có chút không nhận ra cảm giác.</p>
-<p>Nguyên thân trong ký ức đối với Lưu Tam Giới ấn tượng là rất tốt, nhưng cái này là xây dựng ở Lý Hiên nguyên thân trong mười ngày có bảy ngày đều ở bên ngoài lêu lổng, mặc dù thời gian dài trốn học trốn ca, Lưu Tam Giới cũng đối với hắn chẳng quan tâm trụ cột trên.</p>
-<p>Có thể ở Lý Hiên bản thân xem ra, vị này nhân phẩm không thể nói không chịu nổi, nhưng cũng là chẳng tốt đẹp gì.</p>
-<p>Căn cứ hắn giải đến tình huống, cái này Lưu đại ngỗ đến nay tới nay, đã dùng hắn con đường trợ giúp không biết bao nhiêu cái lưu manh tiến vào Lục đạo ty. Hắn mang ra những học sinh kia cũng là công nhận phế vật, không có một cái có thể dùng.</p>
-<p>Vì lẽ đó chậm trễ đệ tử cái này nồi, Lưu Tam Giới là kiên quyết không cắt đuôi được. Ngoài ra vị này thân là Lục đạo ty nhờ vào Linh ngỗ, cũng không có thể vì Lục đạo ty chọn lựa đào tạo lương tài, không tính là hết chức trách.</p>
-<p>"Ta xem qua trước ngươi hai lần thi thể kiểm tra tông cuốn, vẫn tính là học một chút năng lực."</p>
-<p>Lưu Tam Giới đại khái là đọc hiểu Lý Hiên ánh mắt, hắn không khỏi tay vuốt râu dài, 'Sách' một tiếng: "Ta thu đệ tử rất nhiều, nhưng chân chính học ta bản lĩnh không mấy cái. Tuyệt đại đa số đều là nắm Linh ngỗ nghề này coi làm ván cầu, tiến vào Lục đạo ty chung chạ qua ngày, bọn họ dùng không dùng tâm học ta cũng không đáng kể. Nhưng ta nghe ngươi ngày gần đây gây nên, có thể không giống như là phải làm cá mắm dáng vẻ. Vừa là như vậy, vậy thì không thể tha cho ngươi hỏng rồi lão phu danh tiếng."</p>
-<p>"Học sinh đa tạ lão sư." Lý Hiên mỉm cười nở nụ cười, vẻ mặt cảm kích đem sách trong tay sách thu nhập đến trong lòng: "Một tháng ta e sợ nhớ không hết, đệ tử có thể hay không chép lại?"</p>
-<p>"Ngươi nghĩ sao liền sao!"</p>
-<p>Lưu Tam Giới không thèm để ý phất phất tay: "Chỉ phải chú ý đừng tổn hại bút ký của ta liền có thể, tốt xấu là tâm huyết của ta."</p>
-<p>Hắn chỉ có hai cái nữ nhi, là không có cách nào đem tự thân bản lãnh này truyền thừa cho đời sau, cũng không thể để chính mình nữ nhi cũng tới làm khám nghiệm tử thi.</p>
-<p>※※※※</p>
-<p>Ở cáo biệt Lưu Tam Giới sau khi, Lý Hiên lại đi tới Giang Ninh huyện nha tiền đường.</p>
-<p>Lúc này bao quát Lưu điển sử cùng vị kia Trương ngỗ tác ở bên trong một đám có hiềm nghi người các loại đều bị tạm giam ở đây, mà trong đó chỉ là nha dịch, thì có mười mấy người, trong đó thậm chí còn có hai vị ăn mặc một thân 'Phục ma giáp' Lục đạo ty thành viên.</p>
-<p>Lý Hiên nhất thời vẻ mặt kinh ngạc, nghĩ thầm ở cái này thuật tu trước khi chết, có nhiều người như vậy cùng hắn tiếp xúc sao?</p>
-<p>Đường bên trong nói chuyện, chính là bị Lôi Vân cùng Giang Hàm Vận hỏi bên trong Lưu điển sử, vị này trong mắt hiện hồi tưởng vẻ: "Đương thời hai vị này Lục đạo ty Du Kiếu đại nhân suốt đêm đến nha môn thẩm vấn vị kia vô danh thuật tu, bởi can hệ trọng đại, ta tự mình lĩnh sáu tên bộ khoái đi lao ngục, đem phạm nhân áp hướng về hình phòng. Ven đường có mấy chục tên tù nhân là do bất mãn thức ăn xao động, cách song sắt đưa tay lôi kéo chúng ta quần áo. Là do đi ra chật hẹp, bọn họ có đụng chạm đến phạm nhân khả năng. Sau đó là từ nhà giam đến hình phòng đoạn đường kia, có bốn tên làm nhiệm vụ ngục tốt cũng có hiềm nghi, bốn người bọn họ đã ở chỗ này."</p>
-<p>"Lại sau đó chính là hình phòng, bao quát hai vị Lục đạo ty đại nhân ở bên trong tổng cộng có mười lăm người. Trong đó có mười vị nha môn bên trong tiểu nhị, còn có Trương ngỗ tác."</p>
-<p>"Làm khám nghiệm tử thi?" Giang Hàm Vận nhíu mày, nhìn đường dưới quỳ người trẻ tuổi kia: "Các ngươi hỏi han nghi phạm, vì sao phải tìm làm khám nghiệm tử thi?"</p>
-<p>Lưu điển sử lập tức mở miệng giải thích: "Là do cân nhắc đến khả năng cần vận dụng tra tấn, vì lẽ đó hạ quan cố ý đem Trương ngỗ tác gọi tới."</p>
-<p>Mã Thành Công thì lại tiến đến Giang Hàm Vận bên tai: "Đại nhân, nha môn bên trong làm khám nghiệm tử thi , bình thường cũng đều là dụng hình cao thủ."</p>
-<p>"Nhưng chúng ta vừa mới đem nghi phạm gô lên hình giá, còn chưa bắt đầu thẩm vấn, nghi phạm cũng đã khó thở, sắc mặt tái xanh." Lưu điển sử tiếp tục cung cấp thuật lại, đầy mặt cười khổ: "Chúng ta cũng tận lực thi cứu, liên tục cho hắn đút mấy viên giải độc đan, lại khiến người đi tìm đại phu. Có thể không tới nửa khắc thời gian, nghi phạm liền hoàn toàn không một tiếng động."</p>
-<p>Lý Hiên nghe đến đó không khỏi một trận hồ đồ, nói cách khác, mặc dù lúc đó là đêm khuya, người chết từ trúng độc đến độc phát cũng rất ngắn ngủi, có thể có hiềm nghi người nhiều vô số lại có hơn sáu mươi số? Cái này diệt khẩu án bọn họ nên làm sao tra?</p>
-</div><div id="thongbao"><p>Bàn luận, góp ý xin mời vào: <a href="https://bachngocsach.com/forum/threads/31110/unread"><b> [Thảo Luận] Yêu Nữ Trốn Chỗ Nào - Khai Hoang</b></a></p>
-</div>
-  <div id="chuong-meta">
-    <div id="chuong-footer" class="float-wrapper"><div class="submitted"><span class="username">Vong Mạng</span>, <time pubdate datetime="2020-11-29T17:56:16+07:00">29/11/20-17:56</time></div></br><div style="color: orange; float: right;">Ủng hộ quỹ duy trì và phát triển BNS</div></br><div style="float: right;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="47SJCZP5B6ZXA"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form> </div></div>  </div>
+Cùng cảnh giới yêu thú, chí ít cần năm đến mười người tu sĩ tiểu đội tiến hành săn giết, hơn nữa còn không nhất định thành công. Cho dù săn giết thành công, yêu thú một chút tương đối trân quý bộ vị cũng dễ tại chiến đấu quá trình bên trong hư hao, bán không có bao nhiêu linh thạch, cuối cùng ích lợi lại ấn đồng đội cống hiến phân phối, gánh vác xuống tới linh thạch đã tương đối ít ỏi. 
 
-  <div class="qc-chuong">
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <ins class="adsbygoogle"
-    style="display: block;"
-    data-ad-client="ca-pub-9136698491698713"
-	data-ad-slot="1489658370"
-    data-ad-format="auto"
-    data-full-width-responsive="true">
-	</ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div><nav class="chuong-nav" role="navigation"><a href="/reader/yeu-nu-tron-cho-nao-convert/tkrd" class="page-prev captainicon chuong-button" title="Chương 39: Ngươi Là Không Hiểu Rõ Qua Ta"><span class="element-invisible">Previous</span></a><span class="page-jump captainicon chuong-button" title="Nhảy Chương"></span><a href="/reader/yeu-nu-tron-cho-nao-convert/lxry" class="page-next captainicon chuong-button" title="Chương 41: Cây Của Tổng Quản Đại Nhân"><span class="element-invisible">Next</span></a></nav>
-        <style>
-          #thaoluan {
-            width: 100%;
-            border: none;
-          }
-        </style>
-        <script>
-          function thaoluanContentFit(iframe){
-            iframe.height = iframe.contentWindow.document.body.scrollHeight +"px";
-            window.requestAnimationFrame(() => thaoluanContentFit(iframe));
-          }
-          jQuery(window).resize(function(){
-            var iframe = jQuery("#thaoluan")[0];
+Nếu như không cẩn thận lại bị thương, chữa bệnh đan dược cũng là không nhỏ chi tiêu, rất có thể nhập không đủ xuất. Mà một khi bị thương nặng, thường thường rất khó lại dựa vào săn yêu mưu sinh. 
 
-            // It seems that "display:flex" makes browser miscalculate document.body.scrollHeight .
-            // So, setting iframe.height to a value smaller than the value of scrollHeight would
-            // correct the calculating of scrollHeight.
-            iframe.height = jQuery(iframe.contentWindow.document).find(".p-body-main").height() +"px";
+Mặc Sơn dáng người khôi ngô, là cái Thể Tu, khuôn mặt oai hùng mà góc cạnh rõ ràng, lấy tu sĩ tuổi tác tính, vẫn chưa tới trung niên, nhưng bởi vì lâu dài săn giết yêu thú, màn trời chiếu đất, trên mặt đã mang một chút trải qua trắc trở gian nan vất vả. 
 
-            window.thaoluanContentFit(iframe);
-          });
-        </script>
-        <iframe id="thaoluan" src="/forum/threads/31110/thaoluanrd-1606647376-1606647376" onload="thaoluanContentFit(this)" scrolling="no"></iframe>
-      </article>
-							</div>
+Mặc Sơn vào cửa sau, để đao xuống cùng trên vai khiêng không biết yêu thú nào da lông, lúc này mới nhẹ nhàng thở ra. 
 
+Hắn mặc áo ngoài đã mài hỏng, còn mang theo vết máu, có tươi mới cũng có ám trầm, cái này hơn phân nửa là yêu thú máu, cũng có bản thân hoặc là đồng bạn. 
 
-			
-			
-		</div>
-		</div>
-	</div>
+Lần này săn yêu hẳn là không quá thuận lợi, Mặc Họa âm thầm suy đoán. 
 
-	<div class="page-foot">
-		<div class="page-width">
-			      <div class="footer-bns">Nội dung trên BACHNGOCSACH.COM (BNS) được mọi người trong cộng đồng đóng góp. Ban Quản Trị BNS không chịu trách nhiệm về nội dung được đăng tải. Các đường dẫn từ BNS tới trang web thứ ba không đồng nghĩa là được sự chấp thuận của Ban Quản Trị BNS.</div>
-		</div>
-	</div>
+Mặc Sơn lông mày không tự giác nhíu lại, thần sắc nặng nề, lại thêm trên quần áo vết máu, nhìn xem có chút người sống chớ gần lạnh lệ. 
 
-</div>
+Chỉ là cái này mấy phần lệ khí, ở đi vào gia môn, nhìn thấy thê tử lúc liền tiêu tán, phảng phất trải qua khổ chiến tướng sĩ về đến nhà, dỡ xuống trên thân nặng nề mà tràn đầy vết thương khôi giáp. 
 
-	<script src="https://bachngocsach.com/reader/sites/default/files/js/js_xRsoINfioKDigDCtejKyBs4ICULNXOxMuw0ZFdiT0f0.js"></script>
-</body>
-</html>
+Mặc Sơn thanh âm bởi vì mỏi mệt có chút khàn khàn, nhưng vẫn là dùng giọng ôn hòa hỏi: "Trong nhà không có chuyện gì chứ? " 
 
-<!-- Page cached by Boost @ 2021-05-02 17:36:28, expires @ 2021-05-09 17:36:28, lifetime 1 week -->
+Liễu Như Họa thay hắn thu thập hành lý, một bên vừa lấy ra sạch sẽ khăn vải cho hắn lau mặt, "Trong nhà mọi chuyện đều tốt, ngươi không cần lo lắng. " 
+
+Gặp hắn mặt mũi tràn đầy phong trần, nhịn không được nói: "Chính ngươi đi ra ngoài bên ngoài, phải chiếu cố tốt bản thân. " 
+
+Mặc Sơn cười cười, sau đó nhìn xuống trong phòng, "Họa Nhi trở về sao? " 
+
+"Hôm qua vừa trở về, tông môn cũng thả nghỉ đông, hiện tại hẳn là vẫn còn ngủ say sưa đây, ta đi gọi hắn, hắn nếu biết ngươi trở về, không biết cao hứng chừng nào đây. " 
+
+Mặc Sơn nhìn một chút trên quần áo vết máu cùng vết thương trên người, ngăn lại thê tử nói "Nhường hắn ngủ thêm một hồi đi, tông môn tu hành cũng không dễ dàng, ta tắm trước, xát điểm thảo dược, đổi bộ quần áo này. " 
+
+Liễu Như Họa gật đầu nói, "Cũng tốt, kia ngươi ăn trước ít đồ. " 
+
+Mặc Sơn đuổi một đêm lộ, đã sớm bụng đói kêu vang. 
+
+Liễu Như Họa tay nghề rất tốt, cứ việc chỉ là đơn giản một chút đồ ăn, Mặc Sơn vẫn là ăn đến ăn như hổ đói. 
+
+Săn giết yêu thú lúc, thường thường màn trời chiếu đất, đói thì ăn điểm lạnh lẽo cứng rắn lương khô, Tích Cốc Đan cũng không nỡ ăn. Lúc này về nhà ăn thê tử làm đồ ăn, lập tức cảm thấy những cái kia vất vả cùng mệt nhọc đều quét sạch. 
+
+Mặc Sơn ăn thật nhiều, vừa uống một hớp lớn nấu là hương nhu cháo, thở thật dài nhẹ nhõm một cái. Liễu Như Họa nhìn xem hắn trên quần áo vết máu, lúc này mới lo lắng nói: "Lần này là không phải là vừa có người thụ thương ? " 
+
+Mặc Sơn thở dài: "Tổn thương ba cái, Lão Sở vẫn là trọng thương. " 
+
+Mặc Sơn nói tiếp đi lên săn yêu sự tình:
+"Chúng ta một nhóm tám người săn đuổi một con hơn trượng cao lang yêu, vốn đã đem lang yêu vây khốn, đợi chậm rãi hao hết nó yêu lực, liền có thể giết. Không ngờ cái khác đội săn yêu đi qua, đa số vẫn là người mới, máu đều không có chảy qua lần nào, liền gan to bằng trời học người khác nhặt nhạnh chỗ tốt, tùy tiện xuất thủ lúc, bị yêu thú sống sờ sờ ăn hai cái......" 
+
+"Kia nghiệt súc ăn người bổ sung huyết khí, liền khởi xướng điên đến, ta cùng Lão Sở dùng hết linh lực, lúc này mới đem kia lang yêu giết, nhưng cũng là tổn thất nặng nề, Lão Sở hắn đoạn mất một đầu cánh tay, mất rất nhiều máu, nguyên khí trọng thương, chỉ sợ là ăn không được săn yêu chén cơm này......" 
+
+Mặc Sơn vừa khổ chát chát nói "Lão Sở hắn hài tử mới hai tuổi, thê tử cũng chỉ là bán chút rau quả phụ cấp gia dụng, bây giờ bị trọng thương, còn phải tốn một số lớn linh thạch trị thương, thì thôi tổn thương chữa khỏi, về sau một nhà ba người cũng không biết dựa vào cái gì mà sống. " 
+
+Liễu Như Họa cũng thở dài, nói "Trước đó trong nhà của chúng ta khó khăn, Lão Sở bản thân dù không giàu có, vẫn là cho chúng ta mượn linh thạch. Trong nhà còn tồn một chút linh thạch, nếu không lấy trước cho Lão Sở đi, chí ít trước tiên đem tổn thương chữa khỏi. " 
+
+Mặc Sơn nhẹ gật đầu, "Đầu kia lang yêu còn không có xuất thủ, bán hẳn là có thể có khoảng ba trăm linh thạch, đến lúc đó cho Lão Sở đa phần điểm, chúng ta lại mượn điểm linh thạch cho hắn, trước gắng gượng qua lần này, chỉ là......" 
+
+Mặc Sơn có chút áy náy, "Họa Nhi sang năm đi vào tông môn tu hành Thúc Tu......Vốn là muốn giết lang yêu, liền có thể góp cái đại khái, hiện tại ra dạng này sự tình......" 
+
+Liễu Như Họa nắm chặt Mặc Sơn tay nói "Người một nhà bình an liền tốt, linh thạch tóm lại là có biện pháp kiếm lời, ta ở tửu lâu giúp việc bếp núc cũng tồn một chút, lại tìm người khác mượn điểm, không hội chậm trễ Họa Nhi sang năm nhập học tu hành. " 
+
+Mặc Sơn yên lặng nhìn xem thê tử, tấm kia đã từng trẻ tuổi uyển lệ khuôn mặt đã có mấy phần tiều tụy, trong lòng càng thêm tự trách. 
+
+"Thiện phòng bên kia việc cần làm vẫn là đừng làm đi, hỏa khí xâm thể, sẽ làm bị thương tim phổi cùng kinh mạch. Sang năm ta tìm thêm mấy người, giết nhiều mấy con yêu thú, kiếm nhiều một chút linh thạch, không để ngươi trôi qua khổ cực như vậy. " 
+
+Liễu Như Họa hé miệng cười cười, mang mấy phần đắc ý thần sắc, chỉ chỉ trên đầu cây trâm, "Ngươi nhìn đây là cái gì? " 
+
+Mặc Sơn vào cửa lúc chưa từng lưu ý, lúc này nhìn kỹ, phát hiện cây trâm cùng thê tử bình thường đeo không giống. 
+
+"Cái này cây trâm là? " 
+
+"Họa Nhi tặng cho ta, nói là gọi Tịch Hỏa Trâm, có thể tịch bếp lò hỏa khí, mang theo tim phổi cùng kinh mạch đều nhẹ nhàng khoan khoái rất nhiều. " 
+
+"Họa Nhi thật sự là hiểu chuyện. " 
+
+Mặc Sơn đã cảm giác vui mừng, vừa cảm giác hổ thẹn, "Ta cái này làm trượng phu, đã nhiều năm không có tặng quà cho ngươi......" 
+
+Liễu Như Họa cười nói: "Họa Nhi là con của ngươi, hắn đưa liền làm là ngươi đưa. " 
+
+Mặc Sơn bật cười, lập tức vừa khổ cười nói: "Tu đạo thường thường giảng khí vận, đời ta khí vận, khả năng chính là cưới ngươi dạng này thê tử, cùng có Họa Nhi dạng này hiểu chuyện nhi tử ! " 
+
+Liễu Như Họa oán trách nhìn trượng phu một chút, cũng không nhịn được nở nụ cười. 
+
+Mặc Sơn nhìn xem thê tử tiếu dung, trong lòng yên lặng hạ quyết tâm, năm sau tìm mấy cái tu vi cao hơn Liệp Yêu Sư, nghĩ biện pháp tiến Nội Sơn, giết nhiều mấy cái yêu thú, kiếm nhiều một chút linh thạch, quyết không thể để thê tử lại như thế vất vả, hơn nữa cũng phải nghĩ biện pháp cho nhi tử một cái tốt tiền đồ. 
+
+Lời cha mẹ, Mặc Họa trong phòng cũng nghe được, tuổi nhỏ hắn thở dài. 
+
+Ở bản thân không biết chút nào thời điểm, cha mẹ luôn luôn dạng này nhẫn thụ lấy tu đạo sinh hoạt vất vả. Có lẽ vô luận cái nào thế giới, phụ mẫu gánh vác gánh, đều so hài tử tưởng tượng phải hơn rất nhiều. 
+
+Cho dù là tu sĩ, cũng đồng dạng phải vì linh thạch bận rộn, vì sinh kế mà bôn ba. 
+
+Tu sĩ cùng phàm nhân, tựa hồ không giống, nhưng lại tựa hồ không có gì không giống. 
+
+Mặc Họa cảm thán, sau đó yên lặng ở trong lòng suy nghĩ nói "Có cái gì ta cũng có thể kiếm lời linh thạch phương pháp đây? " 
+
+( tấu chương xong)</div>
+        <div class="box-adv box-adv-6416047 hidden">            <div class="box-subcriber col-xs-12 form-group">Hãy nhấn like ở mỗi chương để ủng hộ tinh thần các dịch giả bạn nhé!</div>
+            <div class="box-subcriber col-xs-12 form-group"><a href="http://www.tangthuvien.vn/forum/showthread.php?t=151421" target="_blank">Hãy bớt chút thời gian vào đây bình chọn cho converter bạn yêu thích</a></div>
+            <div class="col-xs-12 text-right">
+                <a href="javascript:void(0);"  onclick="openLogin()"  title="Thích" class="like-control like-chap-6416047 icon-control first ">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    <small>65</small>
+                </a>
+                                <a href="javascript:void(0);" onclick="openWarningBox('6416047')" title="Báo lỗi chương" class="edit-control pull-right"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+    

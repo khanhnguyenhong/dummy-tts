@@ -56,8 +56,8 @@ class LinkFetcher extends React.Component {
     let result = "";
     refiningArr.forEach(
       (str) =>
-        (result +=
-          '<p style="color: white">' + str.split("<")[0].split(">")[1] + "</p>")
+      (result +=
+        '<p style="color: white">' + str.split("<")[0].split(">")[1] + "</p>")
     );
     junks.forEach((j) => (result = result.replace(j, "")));
 
