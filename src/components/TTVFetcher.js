@@ -34,8 +34,8 @@ const TTVFetcher = () => {
     }
 
     return (
-        <div style={{ display: "flex", flexDirection: "column"; width: "300px", margin: "auto" }}>
-            <input type="text" placeholder="Url" id="input-url" />
+        <div style={{ display: "flex", flexDirection: "column", width: "300px", margin: "auto" }}>
+            <textarea type="text" placeholder="Url" id="input-url" />
             <button type="button" onClick={fetchData}>
                 Fetch
             </button>
