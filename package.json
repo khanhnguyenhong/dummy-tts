@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "node index.js",
-    "build": "npm install",
+    "build": "npm install && react-scripts build",
     "build-web": "react-scripts build",
     "test": "react-scripts test",
     "heroku-postbuild": "react-scripts build",

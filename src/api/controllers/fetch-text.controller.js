@@ -1,6 +1,6 @@
 const http = require("follow-redirects").https;
 const fs = require("fs");
-const fileName = "tempDB/temp-db.txt";
+const fileName = "temp-db.txt";
 
 function fetchTextController() {
   function _fetchTextFromUrl(url) {
@@ -68,6 +68,10 @@ function fetchTextController() {
   }
 
   function retriveData(req, res) {
+    if (!fs.existsSync(fileName)) {
+      res.send("Please fetch data...");
+      return
+    }
     try {
       fs.promises.readFile(fileName).then((data) => {
         console.log("data from file:", data);
@@ -75,6 +79,7 @@ function fetchTextController() {
       });
     } catch (err) {
       console.error(err);
+      res.send("Please fetch data...");
     }
   }
 
