@@ -28,6 +28,10 @@ function fetchTextController() {
         });
         res.on("end", function () {
           try {
+            if (!fs.existsSync(fileName)) {
+              fs.writeFileSync(fileName, '');
+              console.log(`File ${fileName} created`);
+            }
             const data = new Uint8Array(Buffer.from(responseHtml));
             fs.promises.writeFile(fileName, data);
           } catch (err) {
