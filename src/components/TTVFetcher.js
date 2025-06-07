@@ -2,11 +2,12 @@ import React from "react";
 import { isEmpty } from "lodash";
 
 const TTVFetcher = () => {
-    // https://tangthuvien.net/get-4-chap?story_id=38060&sort_by_ttv=10
+    // https://tangthuvien.net/get-4-chap?story_id=38060&sort_by_ttv=217
     const [fetchedData, setFetchedData] = React.useState("");
     const [currentLink, setCurrentLink] = React.useState("");
     const [storyId, setStoryId] = React.useState("");
     const [chapter, setChapter] = React.useState(1);
+    const [isSneaking, setIsSneaking] = React.useState(false);
 
     const fetchData = (input = '') => {
         const url = isEmpty(input) ? currentLink : input;
@@ -109,7 +110,8 @@ const TTVFetcher = () => {
             <button type="button" onClick={retriveData}>
                 Show data
             </button>
-            <div style={{ maxHeight: "400px", overflow: "auto" }} dangerouslySetInnerHTML={{ __html: fetchedData }}>
+            <button type="button" onClick={() => setIsSneaking(!isSneaking)}>Sneak: {isSneaking ? 'Yes' : 'No'}</button>
+            <div style={{ maxHeight: "400px", overflow: "auto", color: (isSneaking && fetchedData?.length > 20) ? "rgb(37, 38, 38)" : "gray" }} dangerouslySetInnerHTML={{ __html: fetchedData }}>
             </div>
         </div >
     )
