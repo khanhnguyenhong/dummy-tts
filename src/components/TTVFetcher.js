@@ -8,10 +8,29 @@ const TTVFetcher = () => {
     const [storyId, setStoryId] = React.useState("");
     const [chapter, setChapter] = React.useState(1);
     const [isSneaking, setIsSneaking] = React.useState(false);
+    let history = {};
+
+    const getHistory = () => {
+        const historyString = localStorage.getItem('preTTVHistory');
+        if (historyString) {
+            try {
+                history = JSON.parse(historyString);
+            } catch (e) {
+                history = {};
+            }
+        }
+    }
 
     const fetchData = (input = '') => {
         const url = isEmpty(input) ? currentLink : input;
         localStorage.setItem('preTTVLink', url);
+
+        getHistory();
+        localStorage.setItem('preTTVHistory', JSON.stringify({
+            ...history,
+            [storyId]: chapter
+        }));
+
         setFetchedData("Fetching " + url);
         fetch("/api/fetch-data", {
             method: "POST",
@@ -43,6 +62,18 @@ const TTVFetcher = () => {
             }
         };
         xhttp.open("GET", "/api/retrive-data", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send();
+    }
+
+    const fetchHistoryFromServer = () => {
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                setFetchedData(this.responseText);
+            }
+        };
+        xhttp.open("GET", "/api/fetch-history", true);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send();
     }
@@ -93,9 +124,21 @@ const TTVFetcher = () => {
 
     return (
         <div style={{ display: "flex", flexDirection: "column", width: "300px", margin: "auto" }}>
-            <button type="button" onClick={loadLink}>
-                Load Previous Link
-            </button>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+                <button type="button" onClick={loadLink}>
+                    Load Previous Link
+                </button>
+                <button type="button" onClick={() => {
+                    getHistory()
+                    setFetchedData(JSON.stringify(history))
+                }}>
+                    Fetch History
+                </button>
+                <button type="button" onClick={fetchHistoryFromServer}>
+                    Fetch History from Server
+                </button>
+            </div>
+
             <textarea type="text" placeholder="Url" value={currentLink} onChange={onChangeCurrentLink} />
             <div style={{ display: "flex", flexDirection: "row" }}>
                 <input type="text" placeholder="story_id" value={storyId} onChange={onChangeStoryId} />

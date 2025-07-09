@@ -1,6 +1,7 @@
 const http = require("follow-redirects").https;
 const fs = require("fs");
 const fileName = "temp-db.txt";
+const historyFileName = "history.txt";
 
 function fetchTextController() {
   function _fetchTextFromUrl(url) {
@@ -34,6 +35,23 @@ function fetchTextController() {
             }
             const data = new Uint8Array(Buffer.from(responseHtml));
             fs.promises.writeFile(fileName, data);
+          } catch (err) {
+            console.error(err);
+          }
+
+          let historyContent = '';
+          try {
+            if (!fs.existsSync(historyFileName)) {
+              fs.writeFileSync(historyFileName, '');
+              console.log(`File ${historyFileName} created`);
+            }
+
+            fs.promises.readFile(historyFileName).then((data) => {
+              historyContent = data.toString();
+            });
+
+            const history = new Uint8Array(Buffer.from(historyContent + '\n' + url));
+            fs.promises.writeFile(historyFileName, url);
           } catch (err) {
             console.error(err);
           }
@@ -83,9 +101,26 @@ function fetchTextController() {
     }
   }
 
+  function fetchHistory(req, res) {
+    if (!fs.existsSync(historyFileName)) {
+      res.send("No history...");
+      return
+    }
+    try {
+      fs.promises.readFile(historyFileName).then((data) => {
+        console.log("history from file:", data);
+        res.send(data);
+      });
+    } catch (err) {
+      console.error(err);
+      res.send("Please fetch data...");
+    }
+  }
+
   return {
     fetchText,
     retriveData,
+    fetchHistory,
     fetchDataFromUrl,
   };
 }
