@@ -1,8 +1,8 @@
 import React from "react";
 import { isEmpty } from "lodash";
 
-const TTVFetcher = () => {
-    // https://tangthuvien.net/get-4-chap?story_id=38060&sort_by_ttv=217
+const TCHFetcher = () => {
+    // https://truyenchuhay.vn/vo-tan-sat-luc-ta-hoa-cau-co-bug/chuong-10
     const [fetchedData, setFetchedData] = React.useState("");
     const [currentLink, setCurrentLink] = React.useState("");
     const [storyId, setStoryId] = React.useState("");
@@ -79,12 +79,10 @@ const TTVFetcher = () => {
     }
 
     const setCustomLinkData = (newLink) => {
-        const qs = require('qs');
-        const params = qs.parse(newLink.split('?')[1]);
-        console.log(params.story_id);
-        console.log(params.sort_by_ttv);
-        setStoryId(params.story_id);
-        setChapter(params.sort_by_ttv);
+        const params = newLink.split('/');
+console.log(params);
+        setStoryId(params[3]);
+        setChapter(params[4].split('-')[1]);
     }
 
     const onChangeCurrentLink = (e) => {
@@ -94,7 +92,7 @@ const TTVFetcher = () => {
     }
 
     const editLink = ({ newStoryId, newChapter }) => {
-        const newLink = `https://tangthuvien.net/get-4-chap?story_id=${newStoryId || storyId}&sort_by_ttv=${newChapter || chapter}`
+        const newLink = `https://truyenchuhay.vn/${newStoryId || storyId}/chuong-${newChapter || chapter}`
         setCurrentLink(newLink);
     }
 
@@ -118,13 +116,13 @@ const TTVFetcher = () => {
         editLink({
             newChapter: nextChapter
         })
-        const newLink = `https://tangthuvien.net/get-4-chap?story_id=${storyId}&sort_by_ttv=${nextChapter}`
+        const newLink = `https://truyenchuhay.vn/${storyId}/chuong-${nextChapter}`
         fetchData(newLink);
     }
 
     return (
         <div style={{ display: "flex", flexDirection: "column", width: "300px", margin: "auto" }}>
-            <p>TTVFetcher</p>
+            <p>TCHFetcher</p>
             <div style={{ display: "flex", flexDirection: "row" }}>
                 <button type="button" onClick={loadLink}>
                     Load Previous Link
@@ -148,8 +146,8 @@ const TTVFetcher = () => {
             <button type="button" onClick={() => fetchData()}>
                 Fetch
             </button>
-            <button type="button" onClick={() => fetchNextChapters(4)}>
-                Fetch next 4 chapters
+            <button type="button" onClick={() => fetchNextChapters(1)}>
+                Fetch next chapter
             </button>
             <button type="button" onClick={retriveData}>
                 Show data
@@ -159,6 +157,6 @@ const TTVFetcher = () => {
             </div>
         </div >
     )
-}
+};
 
-export default TTVFetcher
+export default TCHFetcher;

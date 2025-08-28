@@ -51,7 +51,7 @@ function fetchTextController() {
             });
 
             const history = new Uint8Array(Buffer.from(historyContent + '\n' + url));
-            fs.promises.writeFile(historyFileName, url);
+            fs.promises.writeFile(historyFileName, history);
           } catch (err) {
             console.error(err);
           }
