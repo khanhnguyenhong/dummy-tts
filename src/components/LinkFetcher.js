@@ -1,203 +1,161 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import apiService from "../services/apiService";
+import { refineHtml } from "../utils/htmlUtils";
 
-function RemainingItems(props) {
-  if (props.count) {
-    return <p>Remaining Item(s): {props.count}</p>;
-  } else {
-    return <p>No item</p>;
-  }
+function RemainingItems({ count }) {
+  return count ? <p>Remaining Item(s): {count}</p> : <p>No item</p>;
 }
 
-class LinkFetcher extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      urlList: [],
-      urlNameList: [],
-    };
-  }
+const LinkFetcher = () => {
+  const [urlList, setUrlList] = useState([]);
+  const [urlNameList, setUrlNameList] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [fetchedContent, setFetchedContent] = useState("");
+  
+  const preUrlRef = useRef(null);
+  const urlListRef = useRef(null);
+  const inputUrlRef = useRef(null);
+  const includingTextRef = useRef(null);
+  const containerRef = useRef(null);
 
-  fetchData() {
-    let url = document.getElementById("input-url").value;
-    fetch("/api/fetch-data", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        url,
-      }),
-    });
-  }
+  const fetchData = async () => {
+    const url = inputUrlRef.current.value;
+    if (!url) return;
+    
+    setIsLoading(true);
+    try {
+      await apiService.fetchData(url);
+    } catch (error) {
+      console.error("Failed to fetch data", error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
-  _splitByTag(_arr, _tag) {
-    let result = [];
-    _arr.forEach((e) => {
-      let processingArr = (e + "").split("<" + _tag);
-      processingArr.forEach((str) => {
-        str = str.split("</" + _tag + ">")[0];
-      });
-      result = result.concat(processingArr);
-    });
-    return result;
-  }
+  const retrieveText = async () => {
+    try {
+      const text = await apiService.retrieveData();
+      setFetchedContent(refineHtml(text));
+    } catch (error) {
+       console.error("Failed to retrieve text", error);
+    }
+  };
 
-  _reFineHtml(htmlString) {
-    const tags = ["p", "h1", "h2", "h3", "h4", "h5", "pre"];
-    const junks = ["undefined", null];
+  const retrievePage = async () => {
+    try {
+      const text = await apiService.retrieveData();
+      setFetchedContent(text);
+    } catch (error) {
+      console.error("Failed to retrieve page", error);
+    }
+  };
 
-    let reFinedHtml = htmlString && htmlString.length ? htmlString + "" : "";
-    let refiningArr = [reFinedHtml + ""];
-    tags.forEach((tag) => {
-      refiningArr = this._splitByTag(refiningArr, tag);
-    });
+  const constructUrlList = () => {
+    if (urlListRef.current) {
+      setUrlList(urlListRef.current.value.split("\n").filter(line => line.trim() !== ""));
+      urlListRef.current.value = "";
+    }
+  };
 
-    let result = "";
-    refiningArr.forEach(
-      (str) =>
-      (result +=
-        '<p style="color: white">' + str.split("<")[0].split(">")[1] + "</p>")
-    );
-    junks.forEach((j) => (result = result.replace(j, "")));
-
-    return result;
-  }
-
-  retriveText() {
-    let xhttp = new XMLHttpRequest();
-    let that = this;
-    xhttp.onreadystatechange = function () {
-      if (this.readyState === 4 && this.status === 200) {
-        document.getElementById("demo").innerHTML = that._reFineHtml(
-          this.responseText
-        );
-      }
-    };
-    xhttp.open("GET", "/api/retrive-data", true);
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send();
-  }
-
-  retrivePage() {
-    let xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-      if (this.readyState === 4 && this.status === 200) {
-        document.getElementById("demo").innerHTML = this.responseText;
-      }
-    };
-    xhttp.open("GET", "/api/retrive-data", true);
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send();
-  }
-
-  constructUrlList() {
-    this.setState({
-      urlList: document.getElementById("url-list").value.split("\n"),
-    });
-
-    document.getElementById("url-list").value = "";
-  }
-
-  refineUrlListFromPage() {
+  const refineUrlListFromPage = () => {
+    // Note: This still relies on the page having specific content rendered/available in the DOM.
+    // Ideally this should parse fetched content, but conforming to original behavior:
     const aTags = document.getElementsByTagName("a");
-    const includingText = document.getElementById("input-including-text").value;
-    this.setState({
-      urlList: [],
-      urlNameList: [],
-    });
-
-    let tempUrls = [],
-      tempNames = [];
+    const includingText = includingTextRef.current.value;
+    
+    let tempUrls = [];
+    let tempNames = [];
+    
     for (let i = 0; i < aTags.length; i++) {
-      let a = aTags[i];
-      try {
-        tempUrls.push(a.href);
-        tempNames.push(a.innerHTML);
-      } catch (error) {
-        console.log("error while refining a tag", error);
-      }
+        let a = aTags[i];
+        if (a.innerHTML.includes(includingText)) {
+             tempUrls.push(a.href);
+             tempNames.push(a.innerHTML);
+        }
     }
 
-    document.getElementById("url-list").value = "";
-    for (let i = 0; i < tempUrls.length; i++) {
-      if (tempNames[i].indexOf(includingText) >= 0) {
-        this.state.urlNameList.push(tempNames[i]);
-        this.state.urlList.push(tempUrls[i]);
-        document.getElementById("url-list").value += tempUrls[i] + "\n";
-      }
+    setUrlList(tempUrls);
+    setUrlNameList(tempNames);
+    
+    if (urlListRef.current) {
+        urlListRef.current.value = tempUrls.join("\n");
     }
-  }
+  };
 
-  fetchFirstItem() {
-    if (!this.state.urlList.length) {
-      this.setState();
-      return;
+  const fetchFirstItem = () => {
+    if (!urlList.length) return;
+
+    const preUrl = preUrlRef.current ? preUrlRef.current.value.trim() : "";
+    const nextUrl = urlList[0];
+    
+    if (inputUrlRef.current) {
+        inputUrlRef.current.value = preUrl + nextUrl;
     }
-    const preUrl = document.getElementById("pre-url").value.trim();
-    document.getElementById("input-url").value = preUrl + this.state.urlList[0];
 
-    this.state.urlList.splice(0, 1);
-    this.setState({ urlList: this.state.urlList });
+    const newUrlList = [...urlList];
+    newUrlList.shift();
+    setUrlList(newUrlList);
 
-    this.fetchData();
-  }
+    fetchData(); // This uses the inputUrlRef value we just set
+  };
 
-  render() {
-    return (
-      <div className="container">
-        <a className="full-width" href="\">
-          <button type="button" className="full-width">
-            Home
-          </button>
-        </a>
-
-        <input type="text" placeholder="Pre-url" id="pre-url" />
-        <textarea placeholder="Url list" id="url-list"></textarea>
-
-        <RemainingItems count={this.state.urlList.length} />
-
-        <button type="button" onClick={() => this.constructUrlList()}>
-          constructUrlList
+  return (
+    <div className="container" ref={containerRef}>
+      <a className="full-width" href="/">
+        <button type="button" className="full-width">
+          Home
         </button>
-        <button type="button" onClick={() => this.fetchFirstItem()}>
-          Fetch next item
-        </button>
+      </a>
 
-        <div id="url-list-container"></div>
+      <input type="text" placeholder="Pre-url" ref={preUrlRef} id="pre-url" />
+      <textarea placeholder="Url list" ref={urlListRef} id="url-list"></textarea>
 
+      <RemainingItems count={urlList.length} />
+
+      <button type="button" onClick={constructUrlList}>
+        constructUrlList
+      </button>
+      <button type="button" onClick={fetchFirstItem}>
+        Fetch next item
+      </button>
+
+      <div id="url-list-container">
+          {/* Visualization of url list could go here if needed */}
+      </div>
+
+      <input
+        type="text"
+        name="url"
+        placeholder="Fetching url"
+        ref={inputUrlRef}
+        id="input-url"
+      />
+
+      <button type="button" onClick={fetchData} disabled={isLoading}>
+        {isLoading ? "Fetching..." : "Fetch data"}
+      </button>
+      <button type="button" onClick={retrieveText}>
+        Retrieve text
+      </button>
+      <button type="button" onClick={retrievePage}>
+        Retrieve page
+      </button>
+
+      <div className="full-width">
         <input
           type="text"
-          name="url"
-          placeholder="Fetching url"
-          id="input-url"
+          placeholder="Including text"
+          ref={includingTextRef}
+          id="input-including-text"
         />
-
-        <button type="button" onClick={() => this.fetchData()}>
-          Fetch data
+        <button type="button" onClick={refineUrlListFromPage}>
+          Refine Url(s)
         </button>
-        <button type="button" onClick={() => this.retriveText()}>
-          Retrieve text
-        </button>
-        <button type="button" onClick={() => this.retrivePage()}>
-          Retrieve page
-        </button>
-
-        <div className="full-width">
-          <input
-            type="text"
-            placeholder="Including text"
-            id="input-including-text"
-          />
-          <button type="button" onClick={() => this.refineUrlListFromPage()}>
-            Refine Url(s)
-          </button>
-        </div>
-
-        <div id="demo"></div>
       </div>
-    );
-  }
-}
+
+      <div id="demo" dangerouslySetInnerHTML={{ __html: fetchedContent }}></div>
+    </div>
+  );
+};
 
 export default LinkFetcher;

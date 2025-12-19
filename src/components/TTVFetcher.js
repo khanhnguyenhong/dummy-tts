@@ -1,90 +1,90 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { isEmpty } from "lodash";
+import apiService from "../services/apiService";
 
 const TTVFetcher = () => {
     // https://tangthuvien.net/get-4-chap?story_id=38060&sort_by_ttv=217
-    const [fetchedData, setFetchedData] = React.useState("");
-    const [currentLink, setCurrentLink] = React.useState("");
-    const [storyId, setStoryId] = React.useState("");
-    const [chapter, setChapter] = React.useState(1);
-    const [isSneaking, setIsSneaking] = React.useState(false);
-    let history = {};
-
+    const [fetchedData, setFetchedData] = useState("");
+    const [currentLink, setCurrentLink] = useState("");
+    const [storyId, setStoryId] = useState("");
+    const [chapter, setChapter] = useState(1);
+    const [isSneaking, setIsSneaking] = useState(false);
+    
+    // Use state for history to ensure re-renders if needed, though originally it was a local var
+    // But since it's only used for display and local storage, local variable in render scope or ref is better if we don't want re-renders on every change.
+    // However, the original code had `let history = {}` inside component body which is reset on every render! 
+    // This looks like a bug in original code (or it relied on `getHistory` called inside functions).
+    // I will keep it simple.
+    
     const getHistory = () => {
         const historyString = localStorage.getItem('preTTVHistory');
         if (historyString) {
             try {
-                history = JSON.parse(historyString);
+                return JSON.parse(historyString);
             } catch (e) {
-                history = {};
+                return {};
             }
         }
+        return {};
     }
 
-    const fetchData = (input = '') => {
+    const fetchData = async (input = '') => {
         const url = isEmpty(input) ? currentLink : input;
         localStorage.setItem('preTTVLink', url);
 
-        getHistory();
+        const history = getHistory();
         localStorage.setItem('preTTVHistory', JSON.stringify({
             ...history,
             [storyId]: chapter
         }));
 
         setFetchedData("Fetching " + url);
-        fetch("/api/fetch-data", {
-            method: "POST",
-            headers: {
-                Accept: "application/json",
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                url,
-            }),
-        }).then(() => {
-            setFetchedData("Done");
-        }).catch(() => {
+        try {            
+            const response = await apiService.fetchData(url);
+            setFetchedData(JSON.stringify(response.data, null, 2));
+        } catch (error) {
             setFetchedData("Error");
-        });
+        }
     }
 
     const loadLink = () => {
         const newLink = localStorage.getItem('preTTVLink');
-        setCurrentLink(newLink);
-        setCustomLinkData(newLink);
+        if (newLink) {
+            setCurrentLink(newLink);
+            setCustomLinkData(newLink);
+        }
     }
 
-    const retriveData = () => {
-        let xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-            if (this.readyState === 4 && this.status === 200) {
-                setFetchedData(this.responseText);
-            }
-        };
-        xhttp.open("GET", "/api/retrive-data", true);
-        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xhttp.send();
+    const retriveData = async () => {
+        try {
+            const data = await apiService.retrieveData();
+            setFetchedData(data);
+        } catch (error) {
+            console.error("Error retrieving data", error);
+        }
     }
 
-    const fetchHistoryFromServer = () => {
-        let xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-            if (this.readyState === 4 && this.status === 200) {
-                setFetchedData(this.responseText);
-            }
-        };
-        xhttp.open("GET", "/api/fetch-history", true);
-        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xhttp.send();
+    const fetchHistoryFromServer = async () => {
+        try {
+            const data = await apiService.fetchHistory();
+            setFetchedData(data);
+        } catch (error) {
+            console.error("Error fetching history", error);
+        }
     }
 
     const setCustomLinkData = (newLink) => {
-        const qs = require('qs');
-        const params = qs.parse(newLink.split('?')[1]);
-        console.log(params.story_id);
-        console.log(params.sort_by_ttv);
-        setStoryId(params.story_id);
-        setChapter(params.sort_by_ttv);
+        if (!newLink) return;
+        try {
+            const qs = require('qs');
+            if (newLink.split('?')[1]) {
+                const params = qs.parse(newLink.split('?')[1]);
+                if (params.story_id) setStoryId(params.story_id);
+                if (params.sort_by_ttv) setChapter(params.sort_by_ttv);
+            }
+        } catch (e) {
+            console.error("Error parsing link", e);
+        }
     }
 
     const onChangeCurrentLink = (e) => {
@@ -94,7 +94,9 @@ const TTVFetcher = () => {
     }
 
     const editLink = ({ newStoryId, newChapter }) => {
-        const newLink = `https://tangthuvien.net/get-4-chap?story_id=${newStoryId || storyId}&sort_by_ttv=${newChapter || chapter}`
+        const sId = newStoryId || storyId;
+        const chap = newChapter || chapter;
+        const newLink = `https://tangthuvien.net/get-4-chap?story_id=${sId}&sort_by_ttv=${chap}`
         setCurrentLink(newLink);
     }
 
@@ -130,8 +132,8 @@ const TTVFetcher = () => {
                     Load Previous Link
                 </button>
                 <button type="button" onClick={() => {
-                    getHistory()
-                    setFetchedData(JSON.stringify(history))
+                    const hist = getHistory()
+                    setFetchedData(JSON.stringify(hist))
                 }}>
                     Fetch History
                 </button>

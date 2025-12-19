@@ -4,11 +4,9 @@
   "description": "A simple TTS app",
   "private": true,
   "scripts": {
-    "start": "node index.js",
-    "build": "npm install",
-    "build-web": "react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "heroku-postbuild": "react-scripts build",
     "eject": "react-scripts eject"
   },
   "author": "",
@@ -17,29 +15,10 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
-    "body-parser": "^1.19.0",
-    "chalk": "^4.1.0",
-    "debug": "^4.3.1",
-    "express": "^4.17.1",
-    "follow-redirects": "^1.13.3",
-    "morgan": "^1.10.0",
-    "path": "^0.12.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^5.0.1",
     "web-vitals": "^1.1.1"
-  },
-  "devDependencies": {
-    "@types/node": "^14.14.41",
-    "enhanced-resolve": "^3.4.1",
-    "eslint": "^7.24.0"
-  },
-  "eslintConfig": {
-    "extends": []
-  },
-  "engines": {
-    "node": "12.16.1",
-    "npm": "6.13.4"
   },
   "browserslist": {
     "production": [
