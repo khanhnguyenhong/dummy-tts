@@ -25,7 +25,8 @@ const apiService = {
         },
       });
       if (response.ok) {
-        return await response.text();
+        const responseObject = await response.json();
+        return responseObject?.content;
       }
       throw new Error("Network response was not ok.");
     } catch (error) {

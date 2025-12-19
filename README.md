@@ -26,6 +26,8 @@ npm start
 ```
 The app will open at [http://localhost:3000](http://localhost:3000).
 
+> **Note:** The application is configured to proxy API requests to `http://localhost:8000` during development. Ensure your backend service is running on this port.
+
 ### Building
 To create a production build:
 ```bash

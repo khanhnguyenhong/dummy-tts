@@ -2,6 +2,7 @@
   "name": "dummy-tts",
   "version": "1.0.0",
   "description": "A simple TTS app",
+  "proxy": "http://127.0.0.1:8000",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
