@@ -1,6 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { isEmpty } from "lodash";
 import apiService from "../services/apiService";
+import { 
+    paperColor, 
+    toolStyle, 
+    inputStyle, 
+    containerStyle, 
+    linkInputStyle, 
+    linkInputHiddenStyle, 
+    shortInputStyle, 
+    shorterInputStyle 
+} from "../styles/commonStyles";
 
 const TTVFetcher = () => {
     // https://tangthuvien.net/get-4-chap?story_id=38060&sort_by_ttv=217
@@ -9,13 +19,8 @@ const TTVFetcher = () => {
     const [storyId, setStoryId] = useState("");
     const [chapter, setChapter] = useState(1);
     const [isSneaking, setIsSneaking] = useState(false);
-    
-    // Use state for history to ensure re-renders if needed, though originally it was a local var
-    // But since it's only used for display and local storage, local variable in render scope or ref is better if we don't want re-renders on every change.
-    // However, the original code had `let history = {}` inside component body which is reset on every render! 
-    // This looks like a bug in original code (or it relied on `getHistory` called inside functions).
-    // I will keep it simple.
-    
+    const [showTools, setShowTools] = useState(true);
+
     const getHistory = () => {
         const historyString = localStorage.getItem('preTTVHistory');
         if (historyString) {
@@ -39,7 +44,7 @@ const TTVFetcher = () => {
         }));
 
         setFetchedData("Fetching " + url);
-        try {            
+        try {
             const response = await apiService.fetchData(url);
             setFetchedData(JSON.stringify(response.data, null, 2));
         } catch (error) {
@@ -125,39 +130,76 @@ const TTVFetcher = () => {
     }
 
     return (
-        <div style={{ display: "flex", flexDirection: "column", width: "300px", margin: "auto" }}>
-            <p>TTVFetcher</p>
-            <div style={{ display: "flex", flexDirection: "row" }}>
-                <button type="button" onClick={loadLink}>
-                    Load Previous Link
-                </button>
-                <button type="button" onClick={() => {
-                    const hist = getHistory()
-                    setFetchedData(JSON.stringify(hist))
-                }}>
-                    Fetch History
-                </button>
-                <button type="button" onClick={fetchHistoryFromServer}>
-                    Fetch History from Server
-                </button>
-            </div>
-
-            <textarea type="text" placeholder="Url" value={currentLink} onChange={onChangeCurrentLink} />
-            <div style={{ display: "flex", flexDirection: "row" }}>
-                <input type="text" placeholder="story_id" value={storyId} onChange={onChangeStoryId} />
-                <input type="text" placeholder="chapter" value={chapter} onChange={onChangeChapter} />
-            </div>
-            <button type="button" onClick={() => fetchData()}>
-                Fetch
+        <div style={containerStyle}>
+            <button type="button" style={toolStyle} onClick={() => setShowTools(!showTools)}>
+                {showTools ? 'Hide Tools' : 'Show Tools'}
             </button>
-            <button type="button" onClick={() => fetchNextChapters(4)}>
+
+            {showTools && (
+                <>
+                    <p style={{ textAlign: "center", fontWeight: "bold" }}>TTVFetcher</p>
+                    <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center" }}>
+                        <button type="button" style={toolStyle} onClick={loadLink}>
+                            Load Previous Link
+                        </button>
+                        <button type="button" style={toolStyle} onClick={() => {
+                            const hist = getHistory()
+                            setFetchedData(JSON.stringify(hist))
+                        }}>
+                            Fetch History
+                        </button>
+                        <button type="button" style={toolStyle} onClick={fetchHistoryFromServer}>
+                            Fetch History from Server
+                        </button>
+                    </div>
+                </>
+            )}
+
+            {showTools && (
+                <textarea type="text" placeholder="Url" value={currentLink} onChange={onChangeCurrentLink} style={linkInputStyle} />
+            )}
+            {!showTools && (
+                <textarea type="text" placeholder="Url" value={currentLink} onChange={onChangeCurrentLink} style={linkInputHiddenStyle} />
+            )}
+
+            {showTools && (
+                <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+                    <input type="text" placeholder="story_id" value={storyId} onChange={onChangeStoryId} style={shortInputStyle} />
+                    <input type="text" placeholder="chapter" value={chapter} onChange={onChangeChapter} style={shorterInputStyle} />
+                </div>
+            )}
+
+            {showTools && (
+                <button type="button" style={toolStyle} onClick={() => fetchData()}>
+                    Fetch
+                </button>
+            )}
+
+            <button type="button" style={toolStyle} onClick={() => fetchNextChapters(4)}>
                 Fetch next 4 chapters
             </button>
-            <button type="button" onClick={retriveData}>
-                Show data
-            </button>
-            <button type="button" onClick={() => setIsSneaking(!isSneaking)}>Sneak: {isSneaking ? 'Yes' : 'No'}</button>
-            <div style={{ maxHeight: "400px", overflow: "auto", color: (isSneaking && fetchedData?.length > 20) ? "rgb(37, 38, 38)" : "gray" }} dangerouslySetInnerHTML={{ __html: fetchedData }}>
+
+            {showTools && (
+                <>
+                    <button type="button" style={toolStyle} onClick={retriveData}>
+                        Show data
+                    </button>
+                    <button type="button" style={toolStyle} onClick={() => setIsSneaking(!isSneaking)}>Sneak: {isSneaking ? 'Yes' : 'No'}</button>
+                </>
+            )}
+
+            <div 
+                style={{ 
+                    maxHeight: "600px", 
+                    overflow: "auto", 
+                    marginTop: "20px",
+                    padding: "10px",
+                    // When sneaking, text color matches background (invisible). 
+                    // When not sneaking, use a visible dark color.
+                    color: isSneaking ? paperColor : "#333" 
+                }} 
+                dangerouslySetInnerHTML={{ __html: fetchedData }}
+            >
             </div>
         </div >
     )
