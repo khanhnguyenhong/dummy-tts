@@ -8,7 +8,6 @@ export const toolStyle = {
     fontFamily: "monospace",
     backgroundColor: "#fff",
     cursor: "pointer",
-    fontWeight: "bold"
 };
 
 export const inputStyle = {
@@ -29,15 +28,9 @@ export const containerStyle = {
 };
 
 export const linkInputStyle = {
-    ...inputStyle, 
-    height: "60px", 
-    width: "90%" 
-};
-
-export const linkInputHiddenStyle = {
-    ...inputStyle, 
-    width: "90%", 
-    alignSelf:"center" 
+    ...inputStyle,
+    height: "60px",
+    width: "90%"
 };
 
 export const shortInputStyle = {

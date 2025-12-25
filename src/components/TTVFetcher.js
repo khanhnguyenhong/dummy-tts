@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { isEmpty } from "lodash";
 import apiService from "../services/apiService";
-import { 
-    paperColor, 
-    toolStyle, 
-    inputStyle, 
-    containerStyle, 
-    linkInputStyle, 
-    linkInputHiddenStyle, 
-    shortInputStyle, 
-    shorterInputStyle 
+import {
+    paperColor,
+    toolStyle,
+    inputStyle,
+    containerStyle,
+    linkInputStyle,
+    shortInputStyle,
+    shorterInputStyle
 } from "../styles/commonStyles";
 
 const TTVFetcher = () => {
@@ -158,9 +157,6 @@ const TTVFetcher = () => {
             {showTools && (
                 <textarea type="text" placeholder="Url" value={currentLink} onChange={onChangeCurrentLink} style={linkInputStyle} />
             )}
-            {!showTools && (
-                <textarea type="text" placeholder="Url" value={currentLink} onChange={onChangeCurrentLink} style={linkInputHiddenStyle} />
-            )}
 
             {showTools && (
                 <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
@@ -179,25 +175,24 @@ const TTVFetcher = () => {
                 Fetch next 4 chapters
             </button>
 
+            <button type="button" style={toolStyle} onClick={retriveData}>
+                Show data
+            </button>
+
             {showTools && (
-                <>
-                    <button type="button" style={toolStyle} onClick={retriveData}>
-                        Show data
-                    </button>
-                    <button type="button" style={toolStyle} onClick={() => setIsSneaking(!isSneaking)}>Sneak: {isSneaking ? 'Yes' : 'No'}</button>
-                </>
+                <button type="button" style={toolStyle} onClick={() => setIsSneaking(!isSneaking)}>Sneak: {isSneaking ? 'Yes' : 'No'}</button>
             )}
 
-            <div 
-                style={{ 
-                    maxHeight: "600px", 
-                    overflow: "auto", 
+            <div
+                style={{
+                    maxHeight: "600px",
+                    overflow: "auto",
                     marginTop: "20px",
                     padding: "10px",
                     // When sneaking, text color matches background (invisible). 
                     // When not sneaking, use a visible dark color.
-                    color: isSneaking ? paperColor : "#333" 
-                }} 
+                    color: isSneaking ? paperColor : "#333"
+                }}
                 dangerouslySetInnerHTML={{ __html: fetchedData }}
             >
             </div>
