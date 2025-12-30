@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import { isEmpty } from "lodash";
 import apiService from "../services/apiService";
+import {
+    paperColor,
+    toolStyle,
+    inputStyle,
+    containerStyle,
+    linkInputStyle,
+    shortInputStyle,
+    shorterInputStyle
+} from "../styles/commonStyles";
 
 const TCHFetcher = () => {
     // https://truyenchuhay.vn/vo-tan-sat-luc-ta-hoa-cau-co-bug/chuong-10
@@ -9,6 +18,7 @@ const TCHFetcher = () => {
     const [storyId, setStoryId] = useState("");
     const [chapter, setChapter] = useState(1);
     const [isSneaking, setIsSneaking] = useState(false);
+    const [showTools, setShowTools] = useState(true);
     
     const getHistory = () => {
         const historyString = localStorage.getItem('preTTVHistory');
@@ -121,39 +131,60 @@ const TCHFetcher = () => {
     }
 
     return (
-        <div style={{ display: "flex", flexDirection: "column", width: "300px", margin: "auto" }}>
-            <p>TCHFetcher</p>
-            <div style={{ display: "flex", flexDirection: "row" }}>
-                <button type="button" onClick={loadLink}>
-                    Load Previous Link
-                </button>
-                <button type="button" onClick={() => {
-                   const hist = getHistory();
-                    setFetchedData(JSON.stringify(hist))
-                }}>
-                    Fetch History
-                </button>
-                <button type="button" onClick={fetchHistoryFromServer}>
-                    Fetch History from Server
-                </button>
-            </div>
-
-            <textarea type="text" placeholder="Url" value={currentLink} onChange={onChangeCurrentLink} />
-            <div style={{ display: "flex", flexDirection: "row" }}>
-                <input type="text" placeholder="story_id" value={storyId} onChange={onChangeStoryId} />
-                <input type="text" placeholder="chapter" value={chapter} onChange={onChangeChapter} />
-            </div>
-            <button type="button" onClick={() => fetchData()}>
-                Fetch
+        <div style={containerStyle}>
+            <button type="button" style={toolStyle} onClick={() => setShowTools(!showTools)}>
+                {showTools ? 'Hide Tools' : 'Show Tools'}
             </button>
-            <button type="button" onClick={() => fetchNextChapters(1)}>
+
+            {showTools && (
+                <>
+                    <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center" }}>
+                        <button type="button" style={toolStyle} onClick={loadLink}>
+                            Load Previous Link
+                        </button>
+                        <button type="button" style={toolStyle} onClick={() => {
+                           const hist = getHistory();
+                            setFetchedData(JSON.stringify(hist))
+                        }}>
+                            Fetch History
+                        </button>
+                        <button type="button" style={toolStyle} onClick={fetchHistoryFromServer}>
+                            Fetch History from Server
+                        </button>
+                    </div>
+
+                    <textarea type="text" placeholder="Url" value={currentLink} onChange={onChangeCurrentLink} style={linkInputStyle} />
+                    <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+                        <input type="text" placeholder="story_id" value={storyId} onChange={onChangeStoryId} style={shortInputStyle} />
+                        <input type="text" placeholder="chapter" value={chapter} onChange={onChangeChapter} style={shorterInputStyle} />
+                    </div>
+                    <button type="button" style={toolStyle} onClick={() => fetchData()}>
+                        Fetch
+                    </button>
+                </>
+            )}
+
+            <button type="button" style={toolStyle} onClick={() => fetchNextChapters(1)}>
                 Fetch next chapter
             </button>
-            <button type="button" onClick={retriveData}>
+            <button type="button" style={toolStyle} onClick={retriveData}>
                 Show data
             </button>
-            <button type="button" onClick={() => setIsSneaking(!isSneaking)}>Sneak: {isSneaking ? 'Yes' : 'No'}</button>
-            <div style={{ maxHeight: "400px", overflow: "auto", color: (isSneaking && fetchedData?.length > 20) ? "rgb(37, 38, 38)" : "gray" }} dangerouslySetInnerHTML={{ __html: fetchedData }}>
+            
+            {showTools && (
+                <button type="button" style={toolStyle} onClick={() => setIsSneaking(!isSneaking)}>Sneak: {isSneaking ? 'Yes' : 'No'}</button>
+            )}
+
+            <div
+                style={{
+                    maxHeight: "600px",
+                    overflow: "auto",
+                    marginTop: "20px",
+                    padding: "10px",
+                    color: isSneaking ? paperColor : "#333"
+                }}
+                dangerouslySetInnerHTML={{ __html: fetchedData }}
+            >
             </div>
         </div >
     )

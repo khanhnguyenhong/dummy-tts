@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { Suspense, useState } from "react";
-import { toolStyle } from "./styles/commonStyles";
+import { toolStyle, activeToolStyle } from "./styles/commonStyles";
 
 const TCHFetcher = React.lazy(() => import("./components/TCHFetcher"));
 const TTVFetcher = React.lazy(() => import("./components/TTVFetcher"));
@@ -19,9 +19,24 @@ function App() {
         </main>
 
         <nav style={{ display: "flex", justifyContent: "center", gap: "10px", padding: "10px" }}>
-          <button style={toolStyle} onClick={() => setCurrentFetcher("TTVFetcher")}>TTVFetcher</button>
-          <button style={toolStyle} onClick={() => setCurrentFetcher("TCHFetcher")}>TCHFetcher</button>
-          <button style={toolStyle} onClick={() => setCurrentFetcher("LinkFetcher")}>LinkFetcher</button>
+          <button
+            style={currentFetcher === "TTVFetcher" ? activeToolStyle : toolStyle}
+            onClick={() => setCurrentFetcher("TTVFetcher")}
+          >
+            TTVFetcher
+          </button>
+          <button
+            style={currentFetcher === "TCHFetcher" ? activeToolStyle : toolStyle}
+            onClick={() => setCurrentFetcher("TCHFetcher")}
+          >
+            TCHFetcher
+          </button>
+          <button
+            style={currentFetcher === "LinkFetcher" ? activeToolStyle : toolStyle}
+            onClick={() => setCurrentFetcher("LinkFetcher")}
+          >
+            LinkFetcher
+          </button>
         </nav>
       </Suspense>
     </div>

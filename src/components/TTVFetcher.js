@@ -136,7 +136,6 @@ const TTVFetcher = () => {
 
             {showTools && (
                 <>
-                    <p style={{ textAlign: "center", fontWeight: "bold" }}>TTVFetcher</p>
                     <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center" }}>
                         <button type="button" style={toolStyle} onClick={loadLink}>
                             Load Previous Link
@@ -189,8 +188,6 @@ const TTVFetcher = () => {
                     overflow: "auto",
                     marginTop: "20px",
                     padding: "10px",
-                    // When sneaking, text color matches background (invisible). 
-                    // When not sneaking, use a visible dark color.
                     color: isSneaking ? paperColor : "#333"
                 }}
                 dangerouslySetInnerHTML={{ __html: fetchedData }}

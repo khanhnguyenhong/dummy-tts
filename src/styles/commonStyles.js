@@ -10,6 +10,12 @@ export const toolStyle = {
     cursor: "pointer",
 };
 
+export const activeToolStyle = {
+    ...toolStyle,
+    backgroundColor: "#ddd",
+    fontWeight: "bold",
+};
+
 export const inputStyle = {
     ...toolStyle,
     cursor: "text"
@@ -29,8 +35,7 @@ export const containerStyle = {
 
 export const linkInputStyle = {
     ...inputStyle,
-    height: "60px",
-    width: "90%"
+    height: "60px"
 };
 
 export const shortInputStyle = {

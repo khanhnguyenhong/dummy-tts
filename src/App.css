@@ -11,12 +11,6 @@
   width: 100%;
 }
 
-textarea,
-input {
-  width: 100%;
-  margin-bottom: 4px;
-}
-
 button {
   margin-bottom: 4px;
 }
