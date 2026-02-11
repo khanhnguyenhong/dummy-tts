@@ -5,6 +5,7 @@ import { toolStyle, activeToolStyle } from "./styles/commonStyles";
 const TCHFetcher = React.lazy(() => import("./components/TCHFetcher"));
 const TTVFetcher = React.lazy(() => import("./components/TTVFetcher"));
 const LinkFetcher = React.lazy(() => import("./components/LinkFetcher"));
+const FlexLinkFetcher = React.lazy(() => import("./components/FlexLinkFetcher"));
 
 function App() {
   const [currentFetcher, setCurrentFetcher] = useState("TTVFetcher");
@@ -16,6 +17,7 @@ function App() {
           {currentFetcher === "TTVFetcher" && <TTVFetcher />}
           {currentFetcher === "TCHFetcher" && <TCHFetcher />}
           {currentFetcher === "LinkFetcher" && <LinkFetcher />}
+          {currentFetcher === "FlexLinkFetcher" && <FlexLinkFetcher />}
         </main>
 
         <nav style={{ display: "flex", justifyContent: "center", gap: "10px", padding: "10px" }}>
@@ -36,6 +38,12 @@ function App() {
             onClick={() => setCurrentFetcher("LinkFetcher")}
           >
             LinkFetcher
+          </button>
+          <button
+            style={currentFetcher === "FlexLinkFetcher" ? activeToolStyle : toolStyle}
+            onClick={() => setCurrentFetcher("FlexLinkFetcher")}
+          >
+            FlexLinkFetcher
           </button>
         </nav>
       </Suspense>
