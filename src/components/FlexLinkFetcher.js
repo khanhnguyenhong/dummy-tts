@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import apiService from "../services/apiService";
 import {
   paperColor,
@@ -15,6 +15,22 @@ const FlexLinkFetcher = () => {
   const [fetchedContent, setFetchedContent] = useState("");
   const [isSneaking, setIsSneaking] = useState(false);
   const [showTools, setShowTools] = useState(true);
+
+  useEffect(() => {
+    const savedLinkHead = localStorage.getItem("flexFetch_linkHead");
+    const savedFlexibleNumber = localStorage.getItem("flexFetch_flexibleNumber");
+    const savedLinkTrail = localStorage.getItem("flexFetch_linkTrail");
+
+    if (savedLinkHead !== null) setLinkHead(savedLinkHead);
+    if (savedFlexibleNumber !== null) setFlexibleNumber(parseInt(savedFlexibleNumber) || 0);
+    if (savedLinkTrail !== null) setLinkTrail(savedLinkTrail);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("flexFetch_linkHead", linkHead);
+    localStorage.setItem("flexFetch_flexibleNumber", flexibleNumber);
+    localStorage.setItem("flexFetch_linkTrail", linkTrail);
+  }, [linkHead, flexibleNumber, linkTrail]);
 
   const getCombinedUrl = () => {
     return `${linkHead}${flexibleNumber}${linkTrail}`;
@@ -48,8 +64,6 @@ const FlexLinkFetcher = () => {
     const nextNumber = flexibleNumber + 1;
     setFlexibleNumber(nextNumber);
     
-    // We need to fetch with the updated number. 
-    // Since setState is async, we use the local variable here.
     const url = `${linkHead}${nextNumber}${linkTrail}`;
     
     setIsLoading(true);
