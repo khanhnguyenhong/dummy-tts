@@ -6,6 +6,7 @@ const TCHFetcher = React.lazy(() => import("./components/TCHFetcher"));
 const TTVFetcher = React.lazy(() => import("./components/TTVFetcher"));
 const LinkFetcher = React.lazy(() => import("./components/LinkFetcher"));
 const FlexLinkFetcher = React.lazy(() => import("./components/FlexLinkFetcher"));
+const HistoryManager = React.lazy(() => import("./components/HistoryManager"));
 
 function App() {
   const [currentFetcher, setCurrentFetcher] = useState("TTVFetcher");
@@ -18,9 +19,10 @@ function App() {
           {currentFetcher === "TCHFetcher" && <TCHFetcher />}
           {currentFetcher === "LinkFetcher" && <LinkFetcher />}
           {currentFetcher === "FlexLinkFetcher" && <FlexLinkFetcher />}
+          {currentFetcher === "HistoryManager" && <HistoryManager />}
         </main>
 
-        <nav style={{ display: "flex", justifyContent: "center", gap: "10px", padding: "10px" }}>
+        <nav style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", justifyContent: "center", gap: "10px", padding: "10px", width: "100%" }}>
           <button
             style={currentFetcher === "TTVFetcher" ? activeToolStyle : toolStyle}
             onClick={() => setCurrentFetcher("TTVFetcher")}
@@ -44,6 +46,12 @@ function App() {
             onClick={() => setCurrentFetcher("FlexLinkFetcher")}
           >
             FlexLinkFetcher
+          </button>
+          <button
+            style={currentFetcher === "HistoryManager" ? activeToolStyle : toolStyle}
+            onClick={() => setCurrentFetcher("HistoryManager")}
+          >
+            HistoryManager
           </button>
         </nav>
       </Suspense>

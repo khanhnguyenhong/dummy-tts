@@ -6,10 +6,15 @@ import {
   inputStyle,
   containerStyle,
   linkInputStyle,
+  rowToolbarStyle,
+  centeredColStyle,
+  contentDisplayStyle,
 } from "../styles/commonStyles";
 
 function RemainingItems({ count }) {
-  return count ? <p style={{ textAlign: "center" }}>Remaining Item(s): {count}</p> : <p style={{ textAlign: "center" }}>No item</p>;
+  return count
+    ? <p style={{ textAlign: "center" }}>Remaining Item(s): {count}</p>
+    : <p style={{ textAlign: "center" }}>No item</p>;
 }
 
 const LinkFetcher = () => {
@@ -18,18 +23,18 @@ const LinkFetcher = () => {
   const [fetchedContent, setFetchedContent] = useState("");
   const [showTools, setShowTools] = useState(true);
   const [isSneaking, setIsSneaking] = useState(false);
-  
+
   const preUrlRef = useRef(null);
   const urlListRef = useRef(null);
   const inputUrlRef = useRef(null);
   const includingTextRef = useRef(null);
-  const domainNameInput = useRef(null)
+  const domainNameInput = useRef(null);
   const containerRef = useRef(null);
 
   const fetchData = async () => {
     const url = inputUrlRef.current.value;
     if (!url) return;
-    
+
     setIsLoading(true);
     try {
       await apiService.fetchData(url);
@@ -45,7 +50,7 @@ const LinkFetcher = () => {
       const text = await apiService.retrieveData();
       setFetchedContent(text);
     } catch (error) {
-       console.error("Failed to retrieve text", error);
+      console.error("Failed to retrieve text", error);
     }
   };
 
@@ -59,20 +64,19 @@ const LinkFetcher = () => {
     const preUrl = preUrlRef.current ? preUrlRef.current.value.trim() : "";
     const domainName = domainNameInput.current.value;
     const urlsFromText = extractAllUrlsFromATags(preUrl)
-    
+
     let tempUrls = [];
-    
     for (let i = 0; i < urlsFromText.length; i++) {
-        const url = urlsFromText[i];
-        if (url.includes(includingText)) {
-             tempUrls.push(domainName + url);
-        }
+      const url = urlsFromText[i];
+      if (url.includes(includingText)) {
+        tempUrls.push(domainName + url);
+      }
     }
 
     setUrlList(tempUrls);
-    
+
     if (urlListRef.current) {
-        urlListRef.current.value = tempUrls.join("\n");
+      urlListRef.current.value = tempUrls.join("\n");
     }
   };
 
@@ -99,8 +103,8 @@ const LinkFetcher = () => {
       {showTools && (
         <>
           <textarea placeholder="Pre-url" ref={preUrlRef} id="pre-url" style={linkInputStyle} />
-          
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+
+          <div style={centeredColStyle}>
             <input
               type="text"
               placeholder="Including text"
@@ -120,11 +124,11 @@ const LinkFetcher = () => {
             </button>
           </div>
 
-          <textarea placeholder="Url list" ref={urlListRef} id="url-list" style={linkInputStyle}></textarea>
+          <textarea placeholder="Url list" ref={urlListRef} id="url-list" style={linkInputStyle} />
 
           <RemainingItems count={urlList.length} />
 
-          <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center" }}>
+          <div style={rowToolbarStyle}>
             <button type="button" style={toolStyle} onClick={fetchFirstItem}>
               Fetch next item
             </button>
@@ -139,7 +143,7 @@ const LinkFetcher = () => {
             style={inputStyle}
           />
 
-          <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center" }}>
+          <div style={rowToolbarStyle}>
             <button type="button" style={toolStyle} onClick={fetchData} disabled={isLoading}>
               {isLoading ? "Fetching..." : "Fetch data"}
             </button>
@@ -162,15 +166,9 @@ const LinkFetcher = () => {
 
       <div
         id="demo"
-        style={{
-          maxHeight: "600px",
-          overflow: "auto",
-          marginTop: "20px",
-          padding: "10px",
-          color: isSneaking ? paperColor : "#333"
-        }}
+        style={{ ...contentDisplayStyle, maxHeight: "600px", color: isSneaking ? paperColor : "#333" }}
         dangerouslySetInnerHTML={{ __html: fetchedContent }}
-      ></div>
+      />
     </div>
   );
 };

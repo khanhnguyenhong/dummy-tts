@@ -4,11 +4,13 @@ import apiService from "../services/apiService";
 import {
     paperColor,
     toolStyle,
-    inputStyle,
     containerStyle,
     linkInputStyle,
     shortInputStyle,
-    shorterInputStyle
+    shorterInputStyle,
+    rowToolbarStyle,
+    rowCenteredStyle,
+    contentDisplayStyle,
 } from "../styles/commonStyles";
 
 const TCHFetcher = () => {
@@ -19,11 +21,11 @@ const TCHFetcher = () => {
     const [chapter, setChapter] = useState(1);
     const [isSneaking, setIsSneaking] = useState(false);
     const [showTools, setShowTools] = useState(true);
-    
+
     const getHistory = () => {
         const historyString = localStorage.getItem('preTTVHistory');
         if (historyString) {
-             try {
+            try {
                 return JSON.parse(historyString);
             } catch (e) {
                 return {};
@@ -69,7 +71,7 @@ const TCHFetcher = () => {
     }
 
     const fetchHistoryFromServer = async () => {
-       try {
+        try {
             const data = await apiService.fetchHistory();
             setFetchedData(data);
         } catch (error) {
@@ -81,12 +83,11 @@ const TCHFetcher = () => {
         if (!newLink) return;
         try {
             const params = newLink.split('/');
-            // console.log(params);
             if (params.length > 4) {
-                 setStoryId(params[3]);
-                 if (params[4].includes('-')) {
+                setStoryId(params[3]);
+                if (params[4].includes('-')) {
                     setChapter(params[4].split('-')[1]);
-                 }
+                }
             }
         } catch (e) {
             console.error("Error parsing link", e);
@@ -108,24 +109,18 @@ const TCHFetcher = () => {
 
     const onChangeStoryId = (e) => {
         setStoryId(e.target.value);
-        editLink({
-            newStoryId: e.target.value
-        })
+        editLink({ newStoryId: e.target.value })
     }
 
     const onChangeChapter = (e) => {
         setChapter(e.target.value);
-        editLink({
-            newChapter: e.target.value
-        })
+        editLink({ newChapter: e.target.value })
     }
 
     const fetchNextChapters = (number) => {
         const nextChapter = parseInt(chapter) + number;
         setChapter(nextChapter);
-        editLink({
-            newChapter: nextChapter
-        })
+        editLink({ newChapter: nextChapter })
         const newLink = `https://truyenchuhay.vn/${storyId}/chuong-${nextChapter}`
         fetchData(newLink);
     }
@@ -138,12 +133,12 @@ const TCHFetcher = () => {
 
             {showTools && (
                 <>
-                    <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center" }}>
+                    <div style={rowToolbarStyle}>
                         <button type="button" style={toolStyle} onClick={loadLink}>
                             Load Previous Link
                         </button>
                         <button type="button" style={toolStyle} onClick={() => {
-                           const hist = getHistory();
+                            const hist = getHistory();
                             setFetchedData(JSON.stringify(hist))
                         }}>
                             Fetch History
@@ -154,10 +149,12 @@ const TCHFetcher = () => {
                     </div>
 
                     <textarea type="text" placeholder="Url" value={currentLink} onChange={onChangeCurrentLink} style={linkInputStyle} />
-                    <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+
+                    <div style={rowCenteredStyle}>
                         <input type="text" placeholder="story_id" value={storyId} onChange={onChangeStoryId} style={shortInputStyle} />
                         <input type="text" placeholder="chapter" value={chapter} onChange={onChangeChapter} style={shorterInputStyle} />
                     </div>
+
                     <button type="button" style={toolStyle} onClick={() => fetchData()}>
                         Fetch
                     </button>
@@ -170,23 +167,18 @@ const TCHFetcher = () => {
             <button type="button" style={toolStyle} onClick={retriveData}>
                 Show data
             </button>
-            
+
             {showTools && (
-                <button type="button" style={toolStyle} onClick={() => setIsSneaking(!isSneaking)}>Sneak: {isSneaking ? 'Yes' : 'No'}</button>
+                <button type="button" style={toolStyle} onClick={() => setIsSneaking(!isSneaking)}>
+                    Sneak: {isSneaking ? 'Yes' : 'No'}
+                </button>
             )}
 
             <div
-                style={{
-                    maxHeight: "600px",
-                    overflow: "auto",
-                    marginTop: "20px",
-                    padding: "10px",
-                    color: isSneaking ? paperColor : "#333"
-                }}
+                style={{ ...contentDisplayStyle, maxHeight: "600px", color: isSneaking ? paperColor : "#333" }}
                 dangerouslySetInnerHTML={{ __html: fetchedData }}
-            >
-            </div>
-        </div >
+            />
+        </div>
     )
 };
 

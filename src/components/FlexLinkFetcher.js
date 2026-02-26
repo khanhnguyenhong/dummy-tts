@@ -5,6 +5,9 @@ import {
   toolStyle,
   inputStyle,
   containerStyle,
+  rowToolbarStyle,
+  colToolbarStyle,
+  contentDisplayStyle,
 } from "../styles/commonStyles";
 
 const FlexLinkFetcher = () => {
@@ -17,8 +20,9 @@ const FlexLinkFetcher = () => {
   const [showTools, setShowTools] = useState(true);
 
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
     const savedLinkHead = localStorage.getItem("flexFetch_linkHead");
-    const savedFlexibleNumber = localStorage.getItem("flexFetch_flexibleNumber");
+    const savedFlexibleNumber = params.get("n") ?? localStorage.getItem("flexFetch_flexibleNumber");
     const savedLinkTrail = localStorage.getItem("flexFetch_linkTrail");
 
     if (savedLinkHead !== null) setLinkHead(savedLinkHead);
@@ -36,10 +40,17 @@ const FlexLinkFetcher = () => {
     return `${linkHead}${flexibleNumber}${linkTrail}`;
   };
 
+  const syncNumberToUrl = (num) => {
+    const params = new URLSearchParams(window.location.search);
+    params.set("n", num);
+    window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}`);
+  };
+
   const fetchData = async () => {
     const url = getCombinedUrl();
     if (!url) return;
 
+    syncNumberToUrl(flexibleNumber);
     setIsLoading(true);
     try {
       await apiService.fetchData(url);
@@ -63,9 +74,10 @@ const FlexLinkFetcher = () => {
   const fetchNext = async () => {
     const nextNumber = flexibleNumber + 1;
     setFlexibleNumber(nextNumber);
-    
+    syncNumberToUrl(nextNumber);
+
     const url = `${linkHead}${nextNumber}${linkTrail}`;
-    
+
     setIsLoading(true);
     try {
       await apiService.fetchData(url);
@@ -79,9 +91,9 @@ const FlexLinkFetcher = () => {
 
   return (
     <div style={containerStyle}>
-      <button 
-        type="button" 
-        style={toolStyle} 
+      <button
+        type="button"
+        style={toolStyle}
         onClick={() => setShowTools(!showTools)}
       >
         {showTools ? 'Hide Tools' : 'Show Tools'}
@@ -89,7 +101,7 @@ const FlexLinkFetcher = () => {
 
       {showTools && (
         <>
-          <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
+          <div style={colToolbarStyle}>
             <input
               type="text"
               placeholder="Link Head"
@@ -113,11 +125,7 @@ const FlexLinkFetcher = () => {
             />
           </div>
 
-          <div style={{ padding: "10px", wordBreak: "break-all", fontSize: "12px", border: "1px dashed #ccc", margin: "5px 0" }}>
-            URL: {getCombinedUrl()}
-          </div>
-
-          <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center" }}>
+          <div style={rowToolbarStyle}>
             <button type="button" style={toolStyle} onClick={fetchData} disabled={isLoading}>
               {isLoading ? "Fetching..." : "Fetch"}
             </button>
@@ -137,24 +145,17 @@ const FlexLinkFetcher = () => {
 
       {!showTools && (
         <div style={{ display: "flex", justifyContent: "center" }}>
-            <button type="button" style={toolStyle} onClick={fetchNext} disabled={isLoading}>
-                Fetch Next ({flexibleNumber + 1})
-            </button>
+          <button type="button" style={toolStyle} onClick={fetchNext} disabled={isLoading}>
+            Fetch Next ({flexibleNumber + 1})
+          </button>
         </div>
       )}
 
       <div
         id="content-display"
-        style={{
-          maxHeight: "600px",
-          overflow: "auto",
-          marginTop: "20px",
-          padding: "10px",
-          color: isSneaking ? paperColor : "#333",
-          borderTop: "1px solid #eee"
-        }}
+        style={{ ...contentDisplayStyle, color: isSneaking ? paperColor : "#333", borderTop: "1px solid #eee" }}
         dangerouslySetInnerHTML={{ __html: fetchedContent }}
-      ></div>
+      />
     </div>
   );
 };

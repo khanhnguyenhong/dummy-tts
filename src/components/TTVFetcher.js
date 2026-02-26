@@ -4,11 +4,13 @@ import apiService from "../services/apiService";
 import {
     paperColor,
     toolStyle,
-    inputStyle,
     containerStyle,
     linkInputStyle,
     shortInputStyle,
-    shorterInputStyle
+    shorterInputStyle,
+    rowToolbarStyle,
+    rowCenteredStyle,
+    contentDisplayStyle,
 } from "../styles/commonStyles";
 
 const TTVFetcher = () => {
@@ -68,15 +70,6 @@ const TTVFetcher = () => {
         }
     }
 
-    const fetchHistoryFromServer = async () => {
-        try {
-            const data = await apiService.fetchHistory();
-            setFetchedData(data);
-        } catch (error) {
-            console.error("Error fetching history", error);
-        }
-    }
-
     const setCustomLinkData = (newLink) => {
         if (!newLink) return;
         try {
@@ -106,24 +99,18 @@ const TTVFetcher = () => {
 
     const onChangeStoryId = (e) => {
         setStoryId(e.target.value);
-        editLink({
-            newStoryId: e.target.value
-        })
+        editLink({ newStoryId: e.target.value })
     }
 
     const onChangeChapter = (e) => {
         setChapter(e.target.value);
-        editLink({
-            newChapter: e.target.value
-        })
+        editLink({ newChapter: e.target.value })
     }
 
     const fetchNextChapters = (number) => {
         const nextChapter = parseInt(chapter) + number;
         setChapter(nextChapter);
-        editLink({
-            newChapter: nextChapter
-        })
+        editLink({ newChapter: nextChapter })
         const newLink = `https://tangthuvien.net/get-4-chap?story_id=${storyId}&sort_by_ttv=${nextChapter}`
         fetchData(newLink);
     }
@@ -136,7 +123,7 @@ const TTVFetcher = () => {
 
             {showTools && (
                 <>
-                    <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center" }}>
+                    <div style={rowToolbarStyle}>
                         <button type="button" style={toolStyle} onClick={loadLink}>
                             Load Previous Link
                         </button>
@@ -145,9 +132,6 @@ const TTVFetcher = () => {
                             setFetchedData(JSON.stringify(hist))
                         }}>
                             Fetch History
-                        </button>
-                        <button type="button" style={toolStyle} onClick={fetchHistoryFromServer}>
-                            Fetch History from Server
                         </button>
                     </div>
                 </>
@@ -158,7 +142,7 @@ const TTVFetcher = () => {
             )}
 
             {showTools && (
-                <div style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+                <div style={rowCenteredStyle}>
                     <input type="text" placeholder="story_id" value={storyId} onChange={onChangeStoryId} style={shortInputStyle} />
                     <input type="text" placeholder="chapter" value={chapter} onChange={onChangeChapter} style={shorterInputStyle} />
                 </div>
@@ -183,17 +167,10 @@ const TTVFetcher = () => {
             )}
 
             <div
-                style={{
-                    maxHeight: "600px",
-                    overflow: "auto",
-                    marginTop: "20px",
-                    padding: "10px",
-                    color: isSneaking ? paperColor : "#333"
-                }}
+                style={{ ...contentDisplayStyle, color: isSneaking ? paperColor : "#333" }}
                 dangerouslySetInnerHTML={{ __html: fetchedData }}
-            >
-            </div>
-        </div >
+            />
+        </div>
     )
 }
 

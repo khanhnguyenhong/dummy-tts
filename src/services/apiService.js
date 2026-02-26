@@ -44,7 +44,7 @@ const apiService = {
         },
       });
       if (response.ok) {
-        return await response.text();
+        return await response.json();
       }
       throw new Error("Network response was not ok.");
     } catch (error) {
