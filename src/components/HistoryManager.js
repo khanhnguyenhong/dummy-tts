@@ -51,10 +51,8 @@ const HistoryManager = () => {
         const url = separatorIndex !== -1
             ? entry.slice(separatorIndex + separator.length)
             : entry;
-        navigator.clipboard.writeText(url).then(() => {
-            setCopiedIndex(index);
-            setTimeout(() => setCopiedIndex(null), 1500);
-        });
+        window.prompt("Copy to clipboard: Ctrl+C, Enter", url);
+        setCopiedIndex(index);
     };
 
     return (
